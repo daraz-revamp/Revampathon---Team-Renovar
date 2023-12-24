@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .cart-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .cart-item:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item img {
+            margin-right: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item-details {
+            flex-grow: 1;
+        }
+
+        .cart-item-details h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .cart-item-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .cart-item-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .cart-item-quantity {
+            background-color: #f2f2f2;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .cart-item-total {
+            font-size: 20px;
+            font-weight: bold;
+            color: orange; /* Make the total text orange */
+            margin-right: 10px;
+            display: none; /* Hide initially */
+        }
+
+        .cart-total {
+            text-align: right;
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333; /* Add this line to set the color of the total text */
+        }
+
+        .order-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-button:hover {
+            background-color: #45a049;
+        }
+
+        .checkbox-container input {
+            margin-right: 10px;
+        }
+
+        .delete-icon {
+            color: #e74c3c;
+            cursor: pointer;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .delete-icon:hover {
+            color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+<div id="cart-items">
+    <div class="cart-item">
+        <div class="checkbox-container">
+            <input type="checkbox" id="showTotalCheckbox">
+        </div>
+        <img src="image_a.jpg" alt="Product A" width="80">
+        <div class="cart-item-details">
+            <h3>Product A</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="cart-item-quantity">2</div>
+            <div class="delete-icon" onclick="updateCart()"><i class="fas fa-trash-alt"></i></div>
+            <div class="cart-item-price">$20.00</div>
+        </div>
+    </div>
+    <!-- Add more cart items as needed -->
+</div>
+
+<div id="order-box">
+    <p class="cart-total">Total: $<span id="cart-total">40.00</span></p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+<script>
+    function updateCart() {
+        // Function to update the cart dynamically (add, remove, update items)
+        // This function will be implemented based on your needs
+    }
+
+    function calculateTotal() {
+        // Implement the logic to calculate the total based on your cart items
+        // For now, let's use a placeholder value of $40.00
+        return 40.00;
+    }
+
+    document.getElementById("showTotalCheckbox").addEventListener("change", function () {
+        const orderBox = document.getElementById("order-box");
+        const cartTotal = document.querySelector(".cart-total");
+
+        // Toggle the visibility of the order box based on checkbox state
+        if (this.checked) {
+            // Calculate and display cart total here
+            const total = calculateTotal();
+            document.getElementById("cart-total").textContent = total.toFixed(2);
+
+            orderBox.style.display = "block";
+            cartTotal.style.display = "block";
+        } else {
+            orderBox.style.display = "none";
+            cartTotal.style.display = "none";
+        }
+    });
+</script>
+
+</body>
+</html>
