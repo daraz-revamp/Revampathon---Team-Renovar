@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card</title>
+  <style>
+    body {
+      background-color: rgb(242, 243, 247);
+      box-sizing: border-box;
+      color: rgb(51, 51, 51);
+      display: block;
+      font-family: 'Roboto-Regular', "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 17.9999px;
+      margin: 0;
+      text-size-adjust: 100%;
+    }
+
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ddd;
+      max-width: 200px;
+      margin: 20px;
+      position: relative;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card-container:hover {
+      transform: scale(1.1); /* Zoom out effect on hover */
+    }
+
+    .product-picture {
+      flex: 1;
+      background: #f0f0f0;
+      overflow: hidden;
+    }
+
+    .product-details {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .product-details h2 {
+      color: #000; /* Set heading color to black */
+    }
+
+    .product-details p {
+      color: #a6acb3; /* Set paragraph color to grey */
+    }
+
+    .company-icon {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      border: 2px solid #f0f0f1;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @media screen and (max-width: 600px) {
+      .card-container {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="card-container">
+  <div class="product-picture">
+    <img src="https://via.placeholder.com/200" alt="Product Image" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+  
+  <div class="product-details">
+    <h2>Product Title</h2>
+    <p>Product Description goes here...</p>
+  </div>
+
+  <div class="company-icon">
+    <img src="your-logo-image-url.png" alt="Company Logo" style="width: 100%; height: 100%; object-fit: contain;">
+  </div>
+</div>
+
+</body>
+</html>
