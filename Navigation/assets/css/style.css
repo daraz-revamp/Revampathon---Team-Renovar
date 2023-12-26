@@ -60,6 +60,12 @@ body {
   }
 }
 
+.cart-button{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .language-button{
   display: flex;
   justify-content: space-between;
@@ -222,7 +228,7 @@ body {
   align-items: center;
   padding: 5px 0;
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.25);
-  z-index: 5;
+  z-index: 111111;
 }
 
 .mobile-bottom-navigation .action-btn {

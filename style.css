@@ -7,7 +7,7 @@
     margin-top: -1px;
     display: flex;
     /* justify-content: center; */
-    background-color: #AE4804;
+    background-color: #c94807;
     font-size: small;
     padding: 3px 0px 3px 30px;
     .sec-container{
@@ -39,38 +39,83 @@
 /* SIDEBAR CSS */
 
 .sidebar {
-    width: 250px;
-    background-color: #f85606;
-    color: #ffff;
-    padding: 20px;
+    margin-top: 93px;
+    width: 350px;
+    background-color: white;
+    color: #f85606;
     box-sizing: border-box;
     height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 1112;
-}
+    /* border-left: 5px #f85606 solid; */
+    border-right: 3px #c94807 solid;
+    transition: transform 0.3s ease-in-out;
 
-/* Example styles for sidebar links */
-.sidebar a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 0;
-}
+    .sideBar-header{
+        display: flex;
+        font-weight: 600;
+        background-color: white;
+        color: #f85606;
+        padding: 10px 20px 10px 20px;
+        background-color: #f85606;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: large;
+        align-items: center;
+        gap: 10px;    
+        justify-content: space-between;
+        .sideBar-login{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            &:hover{
+                color: #6b3013;
+                ion-icon{
+                    color: #6b3013 !important;
+                }
+            }
+        }
+        ion-icon{
+            color: white !important;
+            &:hover{
+                color: #6b3013 !important;
+                cursor: pointer;
+            }
+        }
+    }
+    .sideBar-content{
+        font-size: medium;
+        padding: 10px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap:5px;
+        .sideBar-content-header{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            &:hover{
+                ion-icon{
+                    color: #f85606 !important;
+                }
+            }
+        }
+    }
+    .dropdown-content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+    }
+    
+    button.active + .dropdown-content {
+        max-height: 300px; 
+    }
 
-.sidebar a:hover {
-    background-color: #37474f;
+    .dropdown-item {
+        padding-left: 20px; 
+    }
 }
-
-.close-btn {
-    color: #fff;
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 20px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-

@@ -24,14 +24,89 @@
   </head>
   <body>
     <div class="sidebar" id="sidebar" style="display: none">
-      <button class="close-btn" onclick="closeSidebar()">X</button>
-      <h2>Sidebar</h2>
-      <a href="#">Home</a>
-      <a href="#">Categories</a>
-      <a href="#">Deals</a>
-      <a href="#">Best Sellers</a>
-      <a href="#">Customer Service</a>
-      <!-- Add more sidebar links as needed -->
+      <header class="sideBar-header">
+        <button class="sideBar-login">
+          <ion-icon
+            name="person-circle-outline"
+            style="color: #f85606"
+            size="large"
+          ></ion-icon>
+          <p>Hello, Sign In?</p>
+        </button>
+        <ion-icon
+          onclick="closeSideBar()"
+          id="chevron-back-outline"
+          name="chevron-back-outline"
+          style="color: #f85606"
+          size="large"
+        ></ion-icon>
+      </header>
+      <div class="sideBar-content">
+        <a class="sideBar-content-header" onclick="toggleDropdown(this)">
+          <button class="dropdown-btn">Browse By Categories</button>
+          <ion-icon
+            id="chevron-forward-outline"
+            name="chevron-forward-outline"
+            style="color: white"
+            size="small"
+          ></ion-icon>
+        </a>
+        <div class="dropdown-content">
+          <div class="dropdown-item">Women's Fashion</div>
+          <div class="dropdown-item">Health & Beauty</div>
+          <div class="dropdown-item">Men's Fashion</div>
+          <div class="dropdown-item">Watches & Accessories</div>
+          <div class="dropdown-item">Electronic Devices</div>
+          <div class="dropdown-item">TV & Home Appliances</div>
+          <div class="dropdown-item">Electronic Accessories</div>
+          <div class="dropdown-item">Groceries & Pets</div>
+          <div class="dropdown-item">Babies & Toys</div>
+          <div class="dropdown-item">Home & Lifestyle</div>
+          <div class="dropdown-item">Sports & Outdoor</div>
+          <div class="dropdown-item">Motors, Tools & DIY</div>
+        </div>
+        <a class="sideBar-content-header" onclick="toggleDropdown(this)">
+          <button>Earn With Daraz</button>
+          <ion-icon
+            id="chevron-forward-outline"
+            name="chevron-forward-outline"
+            style="color: white"
+            size="small"
+          ></ion-icon>
+        </a>
+        <div class="dropdown-content">
+          <div class="dropdown-item">Women's Fashion</div>
+          <div class="dropdown-item">Health & Beauty</div>
+          <div class="dropdown-item">Men's Fashion</div>
+          <div class="dropdown-item">Watches & Accessories</div>
+          <div class="dropdown-item">Electronic Devices</div>
+          <div class="dropdown-item">TV & Home Appliances</div>
+          <div class="dropdown-item">Electronic Accessories</div>
+          <div class="dropdown-item">Groceries & Pets</div>
+          <div class="dropdown-item">Babies & Toys</div>
+          <div class="dropdown-item">Home & Lifestyle</div>
+          <div class="dropdown-item">Sports & Outdoor</div>
+          <div class="dropdown-item">Motors, Tools & DIY</div>
+        </div>
+        <div class="sideBar-content-header">
+          <button>Help & Support</button>
+          <ion-icon
+            id="chevron-forward-outline"
+            name="chevron-forward-outline"
+            style="color: white"
+            size="small"
+          ></ion-icon>
+        </div>
+        <div class="sideBar-content-header">
+          <button>Settings</button>
+          <ion-icon
+            id="chevron-forward-outline"
+            name="chevron-forward-outline"
+            style="color: white"
+            size="small"
+          ></ion-icon>
+        </div>
+      </div>
     </div>
     <div class="nav-main">
       <div class="container">
@@ -95,6 +170,7 @@
                 class="cart-outlines"
                 size="large"
               ></ion-icon>
+              <div class="item-counter" style="font-size: large">0</div>
             </div>
           </div>
         </div>
