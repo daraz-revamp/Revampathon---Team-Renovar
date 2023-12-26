@@ -1,0 +1,76 @@
+@import url(Navigation/assets/css/style.css);
+/* @import url(components/card.css);
+@import url(components/cart.css); */
+
+
+.nav-sec{
+    margin-top: -1px;
+    display: flex;
+    /* justify-content: center; */
+    background-color: #AE4804;
+    font-size: small;
+    padding: 3px 0px 3px 30px;
+    .sec-container{
+        width: 1200px;
+        display: flex;
+        gap: 35px;
+        button{
+            text-wrap: nowrap;
+            color: rgba(255, 255, 255);
+            &:hover{
+                text-decoration: underline;
+                color: white;
+                text-shadow: 0px 0px 1px white;
+
+                cursor: pointer;
+            }
+        }
+        ion-icon{
+            color: white;
+            &:hover{
+                cursor: pointer;
+                opacity: 60%;
+            }
+        }
+    }
+}
+
+
+/* SIDEBAR CSS */
+
+.sidebar {
+    width: 250px;
+    background-color: #f85606;
+    color: #ffff;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1112;
+}
+
+/* Example styles for sidebar links */
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.sidebar a:hover {
+    background-color: #37474f;
+}
+
+.close-btn {
+    color: #fff;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
