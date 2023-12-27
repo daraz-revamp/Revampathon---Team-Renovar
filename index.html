@@ -20,16 +20,15 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="sidebar" id="sidebar" style="display: none">
+    <!-- <div class="sidebar" id="sidebar">
       <header class="sideBar-header">
         <button class="sideBar-login">
           <ion-icon
             name="person-circle-outline"
-            style="color: #f85606"
-            size="large"
+            style="font-size: 22px"
           ></ion-icon>
           <p>Hello, Sign In?</p>
         </button>
@@ -37,25 +36,24 @@
           onclick="closeSideBar()"
           id="chevron-back-outline"
           name="chevron-back-outline"
-          style="color: #f85606"
-          size="large"
+          style="font-size: 22px"
         ></ion-icon>
       </header>
       <div class="sideBar-content">
-        <a class="sideBar-content-header" onclick="toggleDropdown(this)">
+        <div class="sideBar-content-header" onclick="toggleDropdown(this)">
           <button class="dropdown-btn">Browse By Categories</button>
           <ion-icon
             id="chevron-forward-outline"
             name="chevron-forward-outline"
-            style="color: white"
             size="small"
           ></ion-icon>
-        </a>
+        </div>
+        <div class="dropdown-item">Women's Fashion</div>
+        <div class="dropdown-item">Health & Beauty</div>
+        <div class="dropdown-item">Men's Fashion</div>
+        <div class="dropdown-item">Watches & Accessories</div>
+        <a class="dropdown-item" onclick="toggleDropdown(this)">See All ></a>
         <div class="dropdown-content">
-          <div class="dropdown-item">Women's Fashion</div>
-          <div class="dropdown-item">Health & Beauty</div>
-          <div class="dropdown-item">Men's Fashion</div>
-          <div class="dropdown-item">Watches & Accessories</div>
           <div class="dropdown-item">Electronic Devices</div>
           <div class="dropdown-item">TV & Home Appliances</div>
           <div class="dropdown-item">Electronic Accessories</div>
@@ -70,7 +68,6 @@
           <ion-icon
             id="chevron-forward-outline"
             name="chevron-forward-outline"
-            style="color: white"
             size="small"
           ></ion-icon>
         </a>
@@ -93,7 +90,6 @@
           <ion-icon
             id="chevron-forward-outline"
             name="chevron-forward-outline"
-            style="color: white"
             size="small"
           ></ion-icon>
         </div>
@@ -102,117 +98,154 @@
           <ion-icon
             id="chevron-forward-outline"
             name="chevron-forward-outline"
-            style="color: white"
             size="small"
           ></ion-icon>
         </div>
       </div>
-    </div>
-    <div class="nav-main">
-      <div class="container">
-        <div class="container-logo_search">
-          <a href="../index.htm" class="header-logo">
-            <img
-              src="Navigation/assets/images/logo/logo2.png"
-              alt="Daraz LOGO"
-              width="120"
-              height="48"
-            />
-          </a>
+    </div> -->
+    <nav>
+      <div class="nav-main">
+        <div class="container">
+          <div class="container-logo_search">
+            <a href="../index.htm" class="header-logo">
+              <img
+                src="Navigation/assets/images/logo/logo2.png"
+                alt="Daraz LOGO"
+                width="120"
+                height="48"
+              />
+            </a>
 
-          <div class="header-search-container">
-            <input
-              type="search"
-              name="search"
-              class="search-field"
-              placeholder="Search in Daraz"
-            />
+            <div class="header-search-container">
+              <select class="cat-search" id="cat-search">
+                <option value="All">All Categories</option>
 
-            <button class="search-btn">
-              <ion-icon name="search-outline"></ion-icon>
-            </button>
+                <option value="Women's Fashion">Women's Fashion</option>
+                <option value="Health & Beauty">Health & Beauty</option>
+                <option value="Men's Fashion">Men's Fashion</option>
+                <option value="Watches & Accessories">
+                  Watches & Accessories
+                </option>
+                <option value="Electronic Devices">Electronic Devices</option>
+                <option value="TV & Home Appliances">
+                  TV & Home Appliances
+                </option>
+                <option value="Electronic Accessories">
+                  Electronic Accessories
+                </option>
+                <option value="Groceries & Pets">Groceries & Pets</option>
+                <option value="Babies & Toys">Babies & Toys</option>
+                <option value="Home & Lifestyle">Home & Lifestyle</option>
+                <option value="Sports & Outdoor">Sports & Outdoor</option>
+                <option value="Motors, Tools & DIY">Motors, Tools & DIY</option>
+              </select>
+              <input
+                type="search"
+                name="search"
+                class="search-field"
+                placeholder="Search in Daraz"
+              />
+
+              <button class="search-btn">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="actions">
-          <div class="header-user-actions">
-            <div
-              class="login_button"
-              style="display: flex; flex-direction: row; gap: 20px"
-            >
-              <button class="action-btn">
+          <div class="actions">
+            <div class="header-user-actions">
+              <div
+                class="login_button"
+                style="display: flex; flex-direction: row; gap: 20px"
+              >
+                <button class="action-btn">
+                  <ion-icon
+                    name="person-outline"
+                    class="person-outlines"
+                  ></ion-icon>
+                </button>
+                <button>
+                  <a class="login-text">Login</a>
+                </button>
+              </div>
+              <a class="divider">|</a>
+              <div class="signup_button">
+                <button>
+                  <a class="signup-text" style="text-wrap: nowrap">Sign Up</a>
+                </button>
+              </div>
+              <div class="language-button">
+                <ion-icon name="globe-outline" class="globe-oulines"></ion-icon>
+                <a class="EN">EN</a>
                 <ion-icon
-                  name="person-outline"
-                  class="person-outlines"
+                  name="chevron-down-outline"
+                  style="margin-left: -6px"
                 ></ion-icon>
-              </button>
-              <button>
-                <a class="login-text">Login</a>
-              </button>
-            </div>
-            <a class="divider">|</a>
-            <div class="signup_button">
-              <button>
-                <a class="signup-text" style="text-wrap: nowrap">Sign Up</a>
-              </button>
-            </div>
-            <div class="language-button">
-              <ion-icon name="globe-outline" class="globe-oulines"></ion-icon>
-              <a class="EN">EN</a>
-              <ion-icon
-                name="chevron-down-outline"
-                style="margin-left: -6px"
-              ></ion-icon>
-            </div>
+              </div>
 
-            <div class="cart-button">
-              <ion-icon
-                name="cart-outline"
-                class="cart-outlines"
-                size="large"
-              ></ion-icon>
-              <div class="item-counter" style="font-size: large">0</div>
+              <div class="cart-button">
+                <ion-icon
+                  name="cart-outline"
+                  class="cart-outlines"
+                  size="large"
+                ></ion-icon>
+                <span
+                  class="item-counter"
+                  id="item-counter"
+                  style="
+                    font-size: large;
+                    display: inline-block;
+                    width: 20px;
+                    text-align: right;
+                  "
+                ></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="nav-sec">
-      <div class="sec-container">
-        <ion-icon
-          name="reorder-three-outline"
-          size="large"
-          onclick="showSideBar()"
-        ></ion-icon>
-        <button class="sec-1">Become a Seller</button>
-        <button class="sec-2">Payments and Recharge</button>
+      <div class="nav-sec">
+        <div class="sec-container">
+          <!-- <ion-icon
+            name="reorder-three-outline"
+            size="large"
+            onclick="showSideBar()"
+          ></ion-icon> -->
+          <button class="sec-1">Become a Seller</button>
+          <button class="sec-2">Payments and Recharge</button>
 
-        <button class="sec-3">Help & Support</button>
-        <button class="sec-4">Daraz Logistics Partner</button>
+          <button class="sec-3">Gifts & Vouchers</button>
+          <button class="sec-4">Daraz Logistics Partner</button>
+        </div>
       </div>
-    </div>
-    <div style="height: 1000px"></div>
-    s
 
-    <div class="mobile-bottom-navigation">
-      <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
+      <div class="mobile-bottom-navigation">
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
 
-      <button class="action-btn">
-        <ion-icon name="bag-handle-outline"></ion-icon>
-      </button>
+        <button class="action-btn">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+        </button>
 
-      <button class="action-btn">
-        <ion-icon name="home-outline"></ion-icon>
-      </button>
+        <button class="action-btn">
+          <ion-icon name="home-outline"></ion-icon>
+        </button>
 
-      <button class="action-btn">
-        <ion-icon name="heart-outline"></ion-icon>
-      </button>
+        <button class="action-btn">
+          <ion-icon name="heart-outline"></ion-icon>
+        </button>
 
-      <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="grid-outline"></ion-icon>
-      </button>
-    </div>
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="grid-outline"></ion-icon>
+        </button>
+      </div>
+    </nav>
+    <main style="height: 1000px; padding-top: 150px">
+      <!-- <button class="addtocard" onclick="add_item()">Add to Cart</button> -->
+      <section class="content">
+        <img src="" alt="" class="main-ad" />
+      </section>
+    </main>
+    <object class="footer" data="components/footer.html" type=""></object>
   </body>
 </html>

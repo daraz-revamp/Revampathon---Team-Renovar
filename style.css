@@ -2,16 +2,20 @@
 /* @import url(components/card.css);
 @import url(components/cart.css); */
 
-
 .nav-sec{
-    margin-top: -1px;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    margin-top: 90px;
     display: flex;
-    /* justify-content: center; */
-    background-color: #c94807;
+    background-color: #f85606;
+    border-top: 1px solid #c94807;
     font-size: small;
     padding: 3px 0px 3px 30px;
     .sec-container{
-        width: 1200px;
+        margin-left: 200px;
+        margin-right: 200px;
+        max-width: 100%;
         display: flex;
         gap: 35px;
         button{
@@ -39,7 +43,6 @@
 /* SIDEBAR CSS */
 
 .sidebar {
-    margin-top: 93px;
     width: 350px;
     background-color: white;
     color: #f85606;
@@ -52,17 +55,17 @@
     /* border-left: 5px #f85606 solid; */
     border-right: 3px #c94807 solid;
     transition: transform 0.3s ease-in-out;
-
+    left: -350px; /* Start off-screen */
     .sideBar-header{
         display: flex;
         font-weight: 600;
         background-color: white;
         color: #f85606;
-        padding: 10px 20px 10px 20px;
+        padding: 5px 20px 5px 20px;
         background-color: #f85606;
         flex-direction: row;
         flex-wrap: nowrap;
-        font-size: large;
+        font-size: medium;
         align-items: center;
         gap: 10px;    
         justify-content: space-between;
@@ -75,14 +78,14 @@
             &:hover{
                 color: #6b3013;
                 ion-icon{
-                    color: #6b3013 !important;
+                    color: #6b3013;
                 }
             }
         }
         ion-icon{
-            color: white !important;
+            color: white;
             &:hover{
-                color: #6b3013 !important;
+                color: #6b3013;
                 cursor: pointer;
             }
         }
@@ -93,29 +96,133 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        gap:5px;
+        gap:10px;
+        ion-icon{
+            color: white;
+        }
         .sideBar-content-header{
             display: flex;
             align-items: center;
             gap: 10px;
+            .dropdown-btn{
+                font-weight: 600;
+            }
             &:hover{
                 ion-icon{
-                    color: #f85606 !important;
+                    color: #f85606;
                 }
             }
         }
-    }
-    .dropdown-content {
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.3s ease-in-out;
-    }
+        .dropdown-content {
+            overflow: hidden;
+            max-height: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            transition: max-height 0.3s ease-in-out;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        
+        a.active + .dropdown-content {
+            max-height: 300px; 
+        }
     
-    button.active + .dropdown-content {
-        max-height: 300px; 
-    }
-
-    .dropdown-item {
-        padding-left: 20px; 
+        .dropdown-item {
+            padding-left: 20px; 
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
 }
+
+
+
+/* MAIN CONTENT CSS */
+
+main{
+    background-color: #ededed;
+    .content{
+        margin-left: 230px;
+        margin-right: 230px;
+        max-width: 100%;
+        padding: 20px;
+        background-color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER CSS */
+
+.footer{
+    width: 100%;
+    height: 320px;
+}
+
+body{
+    padding-bottom: 0px;
+}
+
+
+
+
+/* RESPONSIVENESS CSS */
+
+@media (min-width: 200px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mobile-bottom-navigation {
+      display: flex;
+    }
+  
+    .sidebar{
+      margin-top: 161px;
+    }
+
+    .nav-sec{
+        margin-top: 158px;
+    }
+  }
+  
+  @media (min-width: 1250px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    .mobile-bottom-navigation {
+      display: none;
+    }
+    
+    .sidebar{
+        margin-top: 93px;
+      }
+
+    .nav-sec{
+        margin-top: 90px;
+    }
+  }
