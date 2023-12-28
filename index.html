@@ -202,12 +202,12 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    width: 30px;
-                    height: 30px;
+                    padding-top: 2.5px;
+                    width: 26px;
+                    height: 26px;
                     background-color: white;
-                    border-radius: 12px;
-                    font-size: 17px;
-                    text-align: center;
+                    border-radius: 10px;
+                    font-size: 16px;
                     font-weight: 600;
                     color: #f85606;
                   "
@@ -283,7 +283,7 @@
           <button class="arrow prev" onclick="prevSlide">&#9665;</button>
           <button class="arrow next" onclick="nextSlide">&#9655;</button>
         </div> -->
-        <img src="components/ad/ad1.png" alt="" class="main-ad" />
+        <img src="components/ad/ad2.png" alt="" class="main-ad" />
         <!-- <marquee behavior="scroll" direction="left" loop="-1" scrollamount="8">
           Heavy Discounts on The <strong>New Year Sale 2024!</strong> Don't Miss
           Them!&nbsp;&nbsp; | &nbsp;&nbsp; Flash Sale Going on
@@ -310,39 +310,17 @@
       <!--Flash Sale-->
       <section class="content c-2" name="Flash Sale">
         <!-- Header Section -->
-        <section
-          class="header"
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          "
-        >
+        <section class="header">
           <div class="title">
-            <h1>Flash Sale</h1>
-            <h5>Grab Them Quick!</h5>
+            <h1>Flash Sale<ion-icon name="flash"></ion-icon></h1>
+            <h5>Quick Picks: Act Now!</h5>
           </div>
           <div
             class="time_rem"
             style="display: flex; gap: 10px; align-items: center"
           >
             <p>Time Remaining:</p>
-            <div
-              id="counter"
-              style="
-                display: inline-block;
-                width: 160px;
-                padding: 5px 10px;
-                background-color: #f85606;
-                border-radius: 10px;
-                color: white;
-                letter-spacing: 1px;
-                text-align: center;
-                font-weight: 500;
-              "
-            >
-              00h : 00m : 00s
-            </div>
+            <div id="counter">00h : 00m : 00s</div>
           </div>
         </section>
 
@@ -352,6 +330,7 @@
 
         <!-- Cards Section -->
         <section class="cards-container">
+          <!-- Product 0 -->
           <div class="card">
             <div class="card-content">
               <img
@@ -379,6 +358,158 @@
                   <ion-icon name="star-half"></ion-icon>
                 </div>
                 <span class="rating-count">(1124)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 26 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/windcheater.jpg"
+              />
+              <p>Waterproof Windcheater Jacket</p>
+              <h6>Rs. 600 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 800</strike
+                >&nbsp; 25% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(300)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 29 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/woolscarf.jpg"
+              />
+              <p>Soft Woolen Scarf</p>
+              <h6>Rs. 150 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 200</strike
+                >&nbsp; 25% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(180)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 30 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/yogamat.jpg"
+              />
+              <p>Premium Yoga Mat</p>
+              <h6>Rs. 400 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 500</strike
+                >&nbsp; 20% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(150)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 20 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/notebook.jpg"
+              />
+              <p>Leather-Bound Notebook</p>
+              <h6>Rs. 150 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 200</strike
+                >&nbsp; 25% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(300)</span>
               </div>
             </div>
             <div class="a2c">
@@ -394,17 +525,13 @@
       <!--Winter Goodies-->
       <section class="content c-3" name="Winter Goodies">
         <!-- Header Section -->
-        <section
-          class="header"
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          "
-        >
+        <section class="header">
           <div class="title">
             <h1>Winter Goodies<ion-icon name="snow-outline"></ion-icon></h1>
             <h5>Explore Some Cozy Essentials!</h5>
+          </div>
+          <div class="show-more winter">
+            Show More<ion-icon name="chevron-forward-outline"></ion-icon>
           </div>
         </section>
 
@@ -414,14 +541,15 @@
 
         <!-- Cards Section -->
         <section class="cards-container">
+          <!-- Product 16 -->
           <div class="card">
             <div class="card-content">
               <img
                 class="item_img"
-                src="components/card-images/flash-sale/shoes.webp"
+                src="components/card-images/flash-sale/hoodie.jpg"
               />
-              <p>Stylish Casual Women Heel Boots Shoes For Women</p>
-              <h6>Rs. 100 <br /></h6>
+              <p>Cozy Hooded Sweatshirt</p>
+              <h6>Rs. 600 <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -429,8 +557,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 200</strike
-                >&nbsp; 50% OFF
+                  >Rs. 800</strike
+                >&nbsp; 25% OFF
               </div>
               <div class="rating">
                 <div class="stars">
@@ -440,7 +568,159 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(1124)</span>
+                <span class="rating-count">(400)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 11 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/gloves.jpg"
+              />
+              <p>Winter Warmth Knitted Gloves</p>
+              <h6>Rs. 150 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 200</strike
+                >&nbsp; 25% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(400)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 12 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/handwarmer.jpg"
+              />
+              <p>Reusable Pocket Hand Warmer</p>
+              <h6>Rs. 50 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 70</strike
+                >&nbsp; 28.57% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(300)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 14 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/heater.jpg"
+              />
+              <p>Portable Electric Heater</p>
+              <h6>Rs. 800 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 1,000</strike
+                >&nbsp; 20% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(500)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 25 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/thermos.jpg"
+              />
+              <p>Insulated Stainless Steel Thermos</p>
+              <h6>Rs. 350 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 450</strike
+                >&nbsp; 22.22% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(250)</span>
               </div>
             </div>
             <div class="a2c">
@@ -456,19 +736,15 @@
       <!--Trending-->
       <section class="content c-4" name="Trending Section">
         <!-- Header Section -->
-        <section
-          class="header"
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          "
-        >
+        <section class="header">
           <div class="title">
             <h1>
               Trending Products<ion-icon name="trending-up-outline"></ion-icon>
             </h1>
             <h5>Redefine Your Style with Latest Trends!</h5>
+          </div>
+          <div class="show-more">
+            Show More<ion-icon name="chevron-forward-outline"></ion-icon>
           </div>
         </section>
 
@@ -478,13 +754,130 @@
 
         <!-- Cards Section -->
         <section class="cards-container">
+          <!-- Product Cards -->
+
+          <!-- Product 18 -->
           <div class="card">
             <div class="card-content">
               <img
                 class="item_img"
-                src="components/card-images/flash-sale/shoes.webp"
+                src="components/card-images/flash-sale/Iphone12.jpg"
               />
-              <p>Stylish Casual Women Heel Boots Shoes For Women</p>
+              <p>Apple iPhone 12 - 128GB</p>
+              <h6>Rs. 80,000 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 90,000</strike
+                >&nbsp; 11.11% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(1200)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/bagpack.jpg"
+              />
+              <p>Trendy Explorer Backpack</p>
+              <h6>Rs 2,500 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs 3,500</strike
+                >&nbsp; 30% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(507)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/blanket.jpg"
+              />
+              <p>Cozy Winter Blanket</p>
+              <h6>Rs 1,800 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs 2,500</strike
+                >&nbsp; 28% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(700)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/brush.webp"
+              />
+              <p>Gentle Care Electric Toothbrush Set, 6 Extra Brushes</p>
               <h6>Rs. 100 <br /></h6>
               <div class="discount">
                 <strike
@@ -502,9 +895,237 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+                <span class="rating-count">(1200)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/cap.jpg"
+              />
+              <p>Classic Cotton Baseball Cap</p>
+              <h6>Rs. 350 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 500</strike
+                >&nbsp; 30% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(1124)</span>
+                <span class="rating-count">(950)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/coffee.jpg"
+              />
+              <p>Arabica Ground Coffee Blend</p>
+              <h6>Rs. 400 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 500</strike
+                >&nbsp; 20% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(1200)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/converse.jpg"
+              />
+              <p>Classic High-Top Canvas Sneakers</p>
+              <h6>Rs. 800 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 1000</strike
+                >&nbsp; 20% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(1500)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 9 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/dell.jpg"
+              />
+              <p>Dell XPS 13 Laptop</p>
+              <h6>Rs. 90,000 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 100,000</strike
+                >&nbsp; 10% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(800)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 28 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/winterpajama.jpg"
+              />
+              <p>Cozy Winter Pajama Set</p>
+              <h6>Rs. 300 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 400</strike
+                >&nbsp; 25% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(220)</span>
+              </div>
+            </div>
+            <div class="a2c">
+              <button class="add-to-cart" id="add-to-cart">
+                <ion-icon name="cart-outline"></ion-icon>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 27 -->
+          <div class="card">
+            <div class="card-content">
+              <img
+                class="item_img"
+                src="components/card-images/flash-sale/winterjacket.jpg"
+              />
+              <p>Stylish Winter Jacket</p>
+              <h6>Rs. 700 <br /></h6>
+              <div class="discount">
+                <strike
+                  style="
+                    font-size: medium;
+                    vertical-align: middle;
+                    display: inline;
+                  "
+                  >Rs. 900</strike
+                >&nbsp; 22.22% OFF
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+                <span class="rating-count">(280)</span>
               </div>
             </div>
             <div class="a2c">

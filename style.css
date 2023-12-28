@@ -182,6 +182,42 @@ main{
         max-width: 100%;
         border-radius: 10px;
         background-color: white;
+        hr{
+            height: 1px;
+            border-width: 0px;
+            background-color :#222f3e;
+            opacity: 35%;
+            margin-bottom: 5px;
+        }
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .show-more{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            color: #222f3e;
+            font-size: 18px;
+            transition: 100ms ease-in-out;
+            ion-icon{
+                font-size: 22px;
+            transition: 100ms ease-in-out;
+
+            }
+            &:hover{
+                cursor: pointer;
+                color: #f85606;
+                ion-icon{
+                    transform: translateX(2px);
+                color: #f85606;
+                }
+            }
+            
+        }
     }
     .c-1{
         .main-ad{
@@ -260,29 +296,81 @@ main{
     }
     .c-2, .c-3, .c-4{
         padding: 20px 30px 30px 30px;
-        hr{
-            height: 1px;
-            border-width: 0px;
-            background-color :#222f3e89;
+        h1{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+
+    .c-2{
+        h1{
+            ion-icon{
+                color: rgb(255, 219, 14);
+                font-size: 35px;
+            }
+        }
+        #counter{
+            display: inline-block;
+                width: 9vw;
+                padding: 5px 10px;
+                background-color: #f85606;
+                border-radius: 10px;
+                color: white;
+                letter-spacing: 1px;
+                text-align: center;
+                font-size: medium;
+                font-weight: 500;
         }
     }
 
     /* Winter Goodies */
     .c-3{
+        border: 2px solid #7dcce6A0;
         background: rgb(255,255,255);
-        background: linear-gradient(34deg, rgba(255,255,255,1) 0%, rgba(176,241,255,1) 100%);
+        background: linear-gradient(34deg, rgba(255,255,255,1) 0%, rgba(203,246,255,1) 100%);
         .card{
-            border: 2px solid rgba(90, 199, 235, 0.301);
+            border: 2px solid #5ac7eb2d;
             &:hover{
-                border-color: rgb(125, 204, 230);
+                border-color: #7dcce6A0;
+            }
+            .rating{
+                & .stars{
+                    ion-icon{
+                        color: rgb(125, 204, 230);
+                    }
+                }
+            }
+            button{
+                border-top: 2px solid rgba(6, 137, 180, 0.119);
+                background-color: rgba(6, 137, 180, 0.062);
+                color: rgb(6, 137, 180);
+                transition: 100ms ease-in-out;
+                &:hover{
+                    background-color: rgb(6, 137, 180);
+                border-top: 2px solid rgb(6, 137, 180);
+
+                    color: white;
+                }
+            }
+        }
+        hr{
+            background-color: rgb(6, 137, 180);
+        }
+        .header{
+            color: rgb(6, 137, 180);
+        }
+        .show-more{
+            &:hover{
+                color: rgb(6, 137, 180);
+                ion-icon{
+                    color: rgb(6, 137, 180);
+                }
             }
         }
         h1{
-            display: flex;
-            align-items: center;
-            gap: 8px;
             ion-icon{
-                color: rgb(90, 199, 235);
+                color: rgb(6, 137, 180);
                 font-size: 35px;
             }
         }
@@ -291,9 +379,6 @@ main{
     /* Trending Products */
     .c-4{
         h1{
-            display: flex;
-            align-items: center;
-            gap: 8px;
             ion-icon{
                 color: #f85606;
                 font-size: 35px;
