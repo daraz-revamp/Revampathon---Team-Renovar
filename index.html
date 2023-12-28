@@ -23,12 +23,12 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- <div class="sidebar" id="sidebar">
+    <div class="sidebar" id="sidebar">
       <header class="sideBar-header">
         <button class="sideBar-login">
           <ion-icon
             name="person-circle-outline"
-            style="font-size: 22px"
+            style="font-size: 25px"
           ></ion-icon>
           <p>Hello, Sign In?</p>
         </button>
@@ -102,7 +102,7 @@
           ></ion-icon>
         </div>
       </div>
-    </div> -->
+    </div>
     <nav>
       <div class="nav-main">
         <div class="container">
@@ -205,11 +205,24 @@
       </div>
       <div class="nav-sec">
         <div class="sec-container">
-          <!-- <ion-icon
-            name="reorder-three-outline"
-            size="large"
+          <span
             onclick="showSideBar()"
-          ></ion-icon> -->
+            class="dashicon"
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-size: 12px;
+              gap: 2px;
+            "
+          >
+            <ion-icon
+              name="reorder-three-outline"
+              style="font-size: 25px"
+            ></ion-icon
+            >All
+          </span>
           <button class="sec-1">Become a Seller</button>
           <button class="sec-2">Payments and Recharge</button>
 
@@ -240,10 +253,49 @@
         </button>
       </div>
     </nav>
-    <main style="height: 1000px; padding-top: 150px">
+    <main>
       <!-- <button class="addtocard" onclick="add_item()">Add to Cart</button> -->
-      <section class="content">
-        <img src="" alt="" class="main-ad" />
+      <section class="content c1">
+        <!-- <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="components/ad/ad1.png" alt="Image 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="components/ad/ad2.png" alt="Image 2" />
+              </div>
+            </div>
+          </div>
+          <button class="arrow prev" onclick="prevSlide">&#9665;</button>
+          <button class="arrow next" onclick="nextSlide">&#9655;</button>
+        </div> -->
+        <img src="components/ad/ad1.png" alt="" class="main-ad" />
+        <!-- <marquee behavior="scroll" direction="left" loop="-1" scrollamount="8">
+          Heavy Discounts on The <strong>New Year Sale 2024!</strong> Don't Miss
+          Them!&nbsp;&nbsp; | &nbsp;&nbsp; Flash Sale Going on
+          <strong>Right Now!</strong> Time Is Running Out! &nbsp;&nbsp; |
+          &nbsp;&nbsp; Bagmati Products on Sale! <strong>25% OFF</strong>
+          <strong>25% OFF</strong>
+        </marquee> -->
+
+        <div class="marquee-container">
+          <div class="marquee-content">
+            Heavy Discounts on The <strong>New Year Sale 2024!</strong> Don't
+            Miss Them!&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Flash Sale Going
+            on <strong>Right Now!</strong> Time Is Running Out!
+            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Bagmati Products on Sale!
+            <strong>25% OFF</strong>
+          </div>
+        </div>
+
+        <!-- <div class="text-ad">
+          Grab Exciting New Offers on The <strong>NEW YEAR SALE 2024!</strong>
+        </div> -->
+      </section>
+
+      <section class="content c2">
+        <!-- Flash -->
       </section>
     </main>
     <object class="footer" data="components/footer.html" type=""></object>

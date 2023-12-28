@@ -32,3 +32,24 @@ function closeSideBar() {
 function add_item() {
   counter.innerText = Number(counter.innerText) + 1;
 }
+
+// CAROUSEL SCRIPT
+
+let currentIndex = 0;
+const totalItems = document.querySelectorAll(".carousel-item").length;
+
+function updateCarousel() {
+  const carouselInner = document.querySelector(".carousel-inner");
+  const translateValue = -currentIndex * 100 + "%";
+  carouselInner.style.transform = "translateX(" + translateValue + ")";
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % totalItems;
+  updateCarousel();
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+  updateCarousel();
+}

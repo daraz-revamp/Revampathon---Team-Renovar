@@ -2,21 +2,27 @@
 /* @import url(components/card.css);
 @import url(components/cart.css); */
 
+strong{
+    color: #f85606;
+}
+
 .nav-sec{
     position: fixed;
     width: 100%;
-    height: 40px;
+    height: 30px;
     margin-top: 90px;
     display: flex;
-    background-color: #f85606;
+    background-color: #c94807;
     border-top: 1px solid #c94807;
-    font-size: small;
+    font-size: 12px;
     padding: 3px 0px 3px 30px;
+    z-index: 10;
     .sec-container{
-        margin-left: 200px;
-        margin-right: 200px;
+        margin-left: 15vw;
+        margin-right: 15vw;
         max-width: 100%;
         display: flex;
+        align-items: center;
         gap: 35px;
         button{
             text-wrap: nowrap;
@@ -29,11 +35,14 @@
                 cursor: pointer;
             }
         }
-        ion-icon{
-            color: white;
+        .dashicon{
             &:hover{
                 cursor: pointer;
-                opacity: 60%;
+                ion-icon{
+                    opacity: 60%;
+                }
+                text-decoration: underline;
+
             }
         }
     }
@@ -43,7 +52,7 @@
 /* SIDEBAR CSS */
 
 .sidebar {
-    width: 350px;
+    width: 15.65vw;
     background-color: white;
     color: #f85606;
     box-sizing: border-box;
@@ -71,10 +80,12 @@
         justify-content: space-between;
         .sideBar-login{
             color: white;
+            height: 40px;
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 10px;
+            font-size: 18px;
             &:hover{
                 color: #6b3013;
                 ion-icon{
@@ -143,18 +154,104 @@
 /* MAIN CONTENT CSS */
 
 main{
+    height: 2000px;
     background-color: #ededed;
     .content{
-        margin-left: 230px;
-        margin-right: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 16.65vw;
+        margin-right: 16.65vw;
         max-width: 100%;
-        padding: 20px;
+        border-radius: 10px;
         background-color: white;
+        .main-ad{
+            width: 100%;
+            height: 432.9px;
+            object-fit:fill;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .text-ad, marquee{
+            position: relative;
+            display: inline-block;
+            background-color: white;
+            height: fit-content;
+            margin: 0 auto;
+            letter-spacing: 2px;
+            text-wrap: nowrap;
+            line-height: 50px;
+            text-align: center;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            z-index: 5;
+        }
+
+        /* Marquee CSS */
+        .marquee-container {
+            letter-spacing: 1px;
+            line-height: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            
+            .marquee-content {
+                display: inline-block;
+                animation: marquee 25s linear infinite;
+               
+            }
+        }
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            /* width: 300px; Adjust the carousel width as needed */
+            margin: 20px auto; /* Center the carousel */
+            .carousel-inner {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                .carousel-item {
+                    min-width: 100%;
+                    box-sizing: border-box;
+                }
+
+                .carousel-item img {
+                    height: 432.9px;
+                }
+            }
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            padding: 10px;
+            z-index: 1;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
     }
 }
 
 
 
+
+@keyframes marquee {
+    from {
+        transform: translateX(90%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
 
 
 
@@ -199,13 +296,13 @@ body{
     .mobile-bottom-navigation {
       display: flex;
     }
-  
-    .sidebar{
-      margin-top: 161px;
-    }
 
     .nav-sec{
         margin-top: 158px;
+    }
+
+    main{
+        padding-top: calc(198px + 20px);max-width: inherit;
     }
   }
   
@@ -217,12 +314,18 @@ body{
     .mobile-bottom-navigation {
       display: none;
     }
-    
-    .sidebar{
-        margin-top: 93px;
-      }
-
     .nav-sec{
         margin-top: 90px;
     }
+    main{
+        padding-top: 140px;
+    }
   }
+
+
+
+
+
+
+
+  
