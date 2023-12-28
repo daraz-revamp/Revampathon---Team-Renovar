@@ -66,7 +66,7 @@ body {
 .cart-button{
   display: flex;
   align-items: center;
-  gap: 0px;
+  gap: 5px;
 }
 
 .language-button{
@@ -148,12 +148,6 @@ body {
   color: white;
   height: 40px;
   /* margin-left: 20px; */
-  font-size: 27px;
-}
-
-.cart-outlines {
-  color: white;
-  height: 40px;
   font-size: 27px;
 }
 

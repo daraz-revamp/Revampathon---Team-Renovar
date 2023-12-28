@@ -8,6 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
@@ -192,10 +199,17 @@
                   class="item-counter"
                   id="item-counter"
                   style="
-                    font-size: large;
-                    display: inline-block;
-                    width: 20px;
-                    text-align: right;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    background-color: white;
+                    border-radius: 12px;
+                    font-size: 17px;
+                    text-align: center;
+                    font-weight: 600;
+                    color: #f85606;
                   "
                 ></span>
               </div>
@@ -254,8 +268,7 @@
       </div>
     </nav>
     <main>
-      <!-- <button class="addtocard" onclick="add_item()">Add to Cart</button> -->
-      <section class="content c1">
+      <section class="content c-1">
         <!-- <div class="carousel-container">
           <div class="carousel">
             <div class="carousel-inner">
@@ -294,8 +307,161 @@
         </div> -->
       </section>
 
-      <section class="content c2">
-        <!-- Flash -->
+      <section class="content c-2">
+        <!-- Header Section -->
+        <section
+          class="header"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div class="title">
+            <h1>Flash Sale</h1>
+            <h5>Grab Them Quick!</h5>
+          </div>
+          <div
+            class="time_rem"
+            style="display: flex; gap: 10px; align-items: center"
+          >
+            <p>Time Remaining:</p>
+            <div
+              id="counter"
+              style="
+                display: inline-block;
+                width: 160px;
+                padding: 5px 10px;
+                background-color: #f85606;
+                border-radius: 10px;
+                color: white;
+                letter-spacing: 1px;
+                text-align: center;
+                font-weight: 500;
+              "
+            >
+              00h : 00m : 00s
+            </div>
+          </div>
+        </section>
+        <br />
+        <hr />
+        <br />
+        <!-- Cards Section -->
+        <section class="card-container">
+          <div class="card">
+            <img class="item_img" src="shoes.png" />
+            <h1>Shoes</h1>
+            <p>Lorem ipsum</p>
+            <h6>
+              Rs. 100
+              <strike
+                style="
+                  font-size: medium;
+                  vertical-align: middle;
+                  display: inline;
+                "
+                >Rs. 200</strike
+              >
+              <p>50% OFF</p>
+            </h6>
+            <div class="rating">
+              <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              (4)
+            </div>
+            <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="card">
+            <img class="item_img" src="shoes.png" />
+            <h1>Shoes</h1>
+            <p>Lorem ipsum</p>
+            <h6>
+              Rs 100
+              <strike
+                style="
+                  font-size: medium;
+                  vertical-align: middle;
+                  display: inline;
+                "
+                >Rs. 200</strike
+              >
+              <p>50% OFF</p>
+            </h6>
+            <div class="rating">
+              <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              (4)
+            </div>
+            <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="card">
+            <img class="item_img" src="shoes.png" />
+            <h1>Shoes</h1>
+            <p>Lorem ipsum</p>
+            <h6>
+              Rs 100
+              <strike
+                style="
+                  font-size: medium;
+                  vertical-align: middle;
+                  display: inline;
+                "
+                >Rs. 200</strike
+              >
+              <p>50% OFF</p>
+            </h6>
+            <div class="rating">
+              <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              (4)
+            </div>
+            <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="card">
+            <img class="item_img" src="shoes.png" />
+            <h1>Shoes</h1>
+            <p>Lorem ipsum</p>
+            <h6>
+              Rs 100
+              <strike
+                style="
+                  font-size: medium;
+                  vertical-align: middle;
+                  display: inline;
+                "
+                >Rs. 200</strike
+              >
+              <p>50% OFF</p>
+            </h6>
+            <div class="rating">
+              <ul>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star checked"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              (4)
+            </div>
+            <button class="add-to-cart" id="add-to-cart">Add to Cart</button>
+          </div>
+        </section>
       </section>
     </main>
     <object class="footer" data="components/footer.html" type=""></object>

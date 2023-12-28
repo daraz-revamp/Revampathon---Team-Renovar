@@ -1,9 +1,23 @@
 @import url(Navigation/assets/css/style.css);
-/* @import url(components/card.css);
-@import url(components/cart.css); */
+@import url(components/card.css);
+@import url(components/cart.css);
 
 strong{
     color: #f85606;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 28px;
+}
+
+h5{
+    font-weight: 400;
+}
+
+small{
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .nav-sec{
@@ -154,6 +168,9 @@ strong{
 /* MAIN CONTENT CSS */
 
 main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     height: 2000px;
     background-color: #ededed;
     .content{
@@ -165,6 +182,8 @@ main{
         max-width: 100%;
         border-radius: 10px;
         background-color: white;
+    }
+    .c-1{
         .main-ad{
             width: 100%;
             height: 432.9px;
@@ -177,16 +196,16 @@ main{
             display: inline-block;
             background-color: white;
             height: fit-content;
-            margin: 0 auto;
-            letter-spacing: 2px;
-            text-wrap: nowrap;
-            line-height: 50px;
-            text-align: center;
-            border-bottom-right-radius: 10px;
-            border-bottom-left-radius: 10px;
-            z-index: 5;
+        margin: 0 auto;
+        letter-spacing: 2px;
+        text-wrap: nowrap;
+        line-height: 50px;
+        text-align: center;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        z-index: 5;
         }
-
+        
         /* Marquee CSS */
         .marquee-container {
             letter-spacing: 1px;
@@ -198,10 +217,10 @@ main{
             .marquee-content {
                 display: inline-block;
                 animation: marquee 25s linear infinite;
-               
+                
             }
         }
-
+        
         .carousel {
             display: flex;
             overflow: hidden;
@@ -214,7 +233,7 @@ main{
                     min-width: 100%;
                     box-sizing: border-box;
                 }
-
+                
                 .carousel-item img {
                     height: 432.9px;
                 }
@@ -237,6 +256,12 @@ main{
         }
         .next {
             right: 0;
+        }
+    }
+    .c-2{
+        padding: 20px 30px 30px 30px;
+        hr{
+            height: 1px;
         }
     }
 }
