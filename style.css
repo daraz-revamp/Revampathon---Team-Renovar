@@ -170,8 +170,8 @@ small{
 main{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    height: 2000px;
+    gap: 20px;
+    height: fit-content;
     background-color: #ededed;
     .content{
         display: flex;
@@ -216,7 +216,7 @@ main{
             
             .marquee-content {
                 display: inline-block;
-                animation: marquee 25s linear infinite;
+                animation: marquee 30s linear infinite;
                 
             }
         }
@@ -258,10 +258,46 @@ main{
             right: 0;
         }
     }
-    .c-2{
+    .c-2, .c-3, .c-4{
         padding: 20px 30px 30px 30px;
         hr{
             height: 1px;
+            border-width: 0px;
+            background-color :#222f3e89;
+        }
+    }
+
+    /* Winter Goodies */
+    .c-3{
+        background: rgb(255,255,255);
+        background: linear-gradient(34deg, rgba(255,255,255,1) 0%, rgba(176,241,255,1) 100%);
+        .card{
+            border: 2px solid rgba(90, 199, 235, 0.301);
+            &:hover{
+                border-color: rgb(125, 204, 230);
+            }
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            ion-icon{
+                color: rgb(90, 199, 235);
+                font-size: 35px;
+            }
+        }
+    }
+
+    /* Trending Products */
+    .c-4{
+        h1{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            ion-icon{
+                color: #f85606;
+                font-size: 35px;
+            }
         }
     }
 }
