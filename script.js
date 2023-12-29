@@ -91,3 +91,11 @@ function formatTime(time) {
 
 updateCounter(); // Initial call to avoid delay
 const timer = setInterval(updateCounter, 1000);
+
+// Accessiblity Bar
+function toggleAccBar() {
+  const accBar = document.querySelector(".acc-bar");
+  const currentRight = parseInt(getComputedStyle(accBar).right, 10);
+
+  accBar.style.right = currentRight === 0 ? "-250px" : "0";
+}

@@ -571,33 +571,7 @@
 </div>
 
 
-<!-- Product 21 -->
-<div class="card">
-  <div class="card-content">
-    <img class="item_img" src="components/card-images/flash-sale/santacap.jpg" />
-    <p>Santa Claus Hat</p>
-    <h6>Rs. 50 <br /></h6>
-    <div class="discount">
-      <strike style="font-size: medium; vertical-align: middle; display: inline;">Rs. 80</strike>&nbsp; 37.5% OFF
-    </div>
-    <div class="rating">
-      <div class="stars">
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star"></ion-icon>
-        <ion-icon name="star-half"></ion-icon>
-      </div>
-      <span class="rating-count">(100)</span>
-    </div>
-  </div>
-  <div class="a2c">
-    <button class="add-to-cart" id="add-to-cart">
-      <ion-icon name="cart-outline"></ion-icon>
-      Add to Cart
-    </button>
-  </div>
-</div>
+
 
 
 <!-- Product 22 -->

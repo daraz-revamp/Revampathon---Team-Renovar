@@ -90,9 +90,12 @@
             align-items:safe;
             color: #9d9d9d;
             gap: 5px;
+            flex-wrap: wrap;
             .stars{
                 display: flex;
                 font-size: 15px;
+            flex-wrap: wrap;
+
                 gap: 3px;
                 ion-icon{
                     color: rgb(244, 207, 0);
