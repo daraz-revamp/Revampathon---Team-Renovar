@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daraz Nepal | Online Shopping in Nepal</title>
+    <title>दराज नेपाल | नेपालमा अनलाइन किनमेल</title>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,11 +32,15 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <script src="script-nepali.js" defer></script>
+    <style>
+      body {
+        font-family: "Roboto";
+        font-weight: 500;
+      }
+    </style>
   </head>
-
   <body>
-    <!-- <div id="content-wrapper"> -->
     <div class="sidebar" id="sidebar">
       <header class="sideBar-header">
         <button class="sideBar-login">
@@ -44,7 +48,7 @@
             name="person-circle-outline"
             style="font-size: 25px"
           ></ion-icon>
-          <p>Hello, Sign In?</p>
+          <p>नमस्कार, साइन इन गर्नुहोस्</p>
         </button>
         <ion-icon
           onclick="closeSideBar()"
@@ -55,30 +59,33 @@
       </header>
       <div class="sideBar-content">
         <div class="sideBar-content-header" onclick="toggleDropdown(this)">
-          <button class="dropdown-btn">Browse By Categories</button>
+          <button class="dropdown-btn">वर्गहरू द्वारा ब्राउज गर्नुहोस्</button>
           <ion-icon
             id="chevron-forward-outline"
             name="chevron-forward-outline"
             size="small"
           ></ion-icon>
         </div>
-        <div class="dropdown-item">Women's Fashion</div>
-        <div class="dropdown-item">Health & Beauty</div>
-        <div class="dropdown-item">Men's Fashion</div>
-        <div class="dropdown-item">Watches & Accessories</div>
-        <a class="dropdown-item" onclick="toggleDropdown(this)">See All ></a>
+        <div class="dropdown-item">महिलाहरूको फेसन</div>
+        <div class="dropdown-item">स्वास्थ्य र सौन्दर्य</div>
+        <div class="dropdown-item">पुरुषहरूको फेसन</div>
+        <div class="dropdown-item">घडी र सहायक सामग्रीहरू</div>
+        <a class="dropdown-item" onclick="toggleDropdown(this)"
+          >सब देख्नुहोस् ></a
+        >
         <div class="dropdown-content">
-          <div class="dropdown-item">Electronic Devices</div>
-          <div class="dropdown-item">TV & Home Appliances</div>
-          <div class="dropdown-item">Electronic Accessories</div>
-          <div class="dropdown-item">Groceries & Pets</div>
-          <div class="dropdown-item">Babies & Toys</div>
-          <div class="dropdown-item">Home & Lifestyle</div>
-          <div class="dropdown-item">Sports & Outdoor</div>
-          <div class="dropdown-item">Motors, Tools & DIY</div>
+          <div class="dropdown-item">इलेक्ट्रोनिक डिभाइसहरू</div>
+          <div class="dropdown-item">टीभी र गृह उपकरणहरू</div>
+          <div class="dropdown-item">इलेक्ट्रोनिक सहायक सामग्रीहरू</div>
+          <div class="dropdown-item">खड्यान्ना र पशुपालन</div>
+          <div class="dropdown-item">बच्चाहरू र खेलौनाहरू</div>
+          <div class="dropdown-item">घर र जीवनशैली</div>
+          <div class="dropdown-item">खेल र आउटडोर</div>
+          <div class="dropdown-item">मोटर, टुल्स र DIY</div>
         </div>
+
         <a class="sideBar-content-header" onclick="toggleDropdown(this)">
-          <button>Earn With Daraz</button>
+          <button>दराजसँग कमाउनुहोस्</button>
           <ion-icon
             id="chevron-forward-outline"
             name="chevron-forward-outline"
@@ -86,21 +93,22 @@
           ></ion-icon>
         </a>
         <div class="dropdown-content">
-          <div class="dropdown-item">Women's Fashion</div>
-          <div class="dropdown-item">Health & Beauty</div>
-          <div class="dropdown-item">Men's Fashion</div>
-          <div class="dropdown-item">Watches & Accessories</div>
-          <div class="dropdown-item">Electronic Devices</div>
-          <div class="dropdown-item">TV & Home Appliances</div>
-          <div class="dropdown-item">Electronic Accessories</div>
-          <div class="dropdown-item">Groceries & Pets</div>
-          <div class="dropdown-item">Babies & Toys</div>
-          <div class="dropdown-item">Home & Lifestyle</div>
-          <div class="dropdown-item">Sports & Outdoor</div>
-          <div class="dropdown-item">Motors, Tools & DIY</div>
+          <div class="dropdown-item">महिलाहरूको फेसन</div>
+          <div class="dropdown-item">स्वास्थ्य र सौन्दर्य</div>
+          <div class="dropdown-item">पुरुषहरूको फेसन</div>
+          <div class="dropdown-item">घडी र सहायक सामग्रीहरू</div>
+          <div class="dropdown-item">इलेक्ट्रोनिक डिभाइसहरू</div>
+          <div class="dropdown-item">टीभी र गृह उपकरणहरू</div>
+          <div class="dropdown-item">इलेक्ट्रोनिक सहायक सामग्रीहरू</div>
+          <div class="dropdown-item">खड्यान्ना र पशुपालन</div>
+          <div class="dropdown-item">बच्चाहरू र खेलौनाहरू</div>
+          <div class="dropdown-item">घर र जीवनशैली</div>
+          <div class="dropdown-item">खेल र आउटडोर</div>
+          <div class="dropdown-item">मोटर, टुल्स र DIY</div>
         </div>
+
         <div class="sideBar-content-header">
-          <button>Help & Support</button>
+          <button>मद्दत र समर्थन</button>
           <ion-icon
             id="chevron-forward-outline"
             name="chevron-forward-outline"
@@ -108,7 +116,7 @@
           ></ion-icon>
         </div>
         <div class="sideBar-content-header">
-          <button>Settings</button>
+          <button>सेटिङहरू</button>
           <ion-icon
             id="chevron-forward-outline"
             name="chevron-forward-outline"
@@ -118,7 +126,7 @@
       </div>
     </div>
     <nav>
-      <div class="nav-main" id="nav-main">
+      <div class="nav-main">
         <div class="container">
           <div class="container-logo_search">
             <a href="../index.htm" class="header-logo">
@@ -132,32 +140,36 @@
 
             <div class="header-search-container">
               <select class="cat-search" id="cat-search">
-                <option value="All">All Categories</option>
+                <option value="All">सबै श्रेणीहरू</option>
 
-                <option value="Women's Fashion">Women's Fashion</option>
-                <option value="Health & Beauty">Health & Beauty</option>
-                <option value="Men's Fashion">Men's Fashion</option>
+                <option value="Women's Fashion">महिलाहरूको फेसन</option>
+                <option value="Health & Beauty">स्वास्थ्य र सौन्दर्य</option>
+                <option value="Men's Fashion">पुरुषहरूको फेसन</option>
                 <option value="Watches & Accessories">
-                  Watches & Accessories
+                  घडी र सहायक सामग्रीहरू
                 </option>
-                <option value="Electronic Devices">Electronic Devices</option>
+                <option value="Electronic Devices">
+                  इलेक्ट्रोनिक डिभाइसहरू
+                </option>
                 <option value="TV & Home Appliances">
-                  TV & Home Appliances
+                  टीभी र गृह उपकरणहरू
                 </option>
                 <option value="Electronic Accessories">
-                  Electronic Accessories
+                  इलेक्ट्रोनिक सहायक सामग्रीहरू
                 </option>
-                <option value="Groceries & Pets">Groceries & Pets</option>
-                <option value="Babies & Toys">Babies & Toys</option>
-                <option value="Home & Lifestyle">Home & Lifestyle</option>
-                <option value="Sports & Outdoor">Sports & Outdoor</option>
-                <option value="Motors, Tools & DIY">Motors, Tools & DIY</option>
+                <option value="Groceries & Pets">खड्यान्ना र पशुपालन</option>
+                <option value="Babies & Toys">बच्चाहरू र खेलौनाहरू</option>
+                <option value="Home & Lifestyle">घर र जीवनशैली</option>
+                <option value="Sports & Outdoor">खेल र आउटडोर</option>
+                <option value="Motors, Tools & DIY">मोटर, टुल्स र DIY</option>
               </select>
+
               <input
                 type="search"
                 name="search"
                 class="search-field"
-                placeholder="Search in Daraz"
+                placeholder="दराज मा खोज्नुहोस्"
+                style="padding: 12px 10px"
               />
 
               <button class="search-btn">
@@ -178,13 +190,13 @@
                   ></ion-icon>
                 </button>
                 <button>
-                  <a class="login-text">Login</a>
+                  <a class="login-text">लग-इन</a>
                 </button>
               </div>
               <a class="divider">|</a>
               <div class="signup_button">
                 <button>
-                  <a class="signup-text" style="text-wrap: nowrap">Sign Up</a>
+                  <a class="signup-text" style="text-wrap: nowrap">साइन अप</a>
                 </button>
               </div>
               <div class="language-button">
@@ -193,27 +205,27 @@
                     <div class="lang-icon"></div>
                     <ion-icon name="globe-outline" class="globe-oulines">
                     </ion-icon>
-                    <p>English</p>
+                    <p>नेपाली</p>
                     <ion-icon
                       name="chevron-down-outline"
                       style="margin-left: -6px"
                     ></ion-icon>
                   </a>
                   <button
-                    onclick="window.location.href='index-nepali.html'"
+                    onclick="window.location.href='index.html'"
                     class="lang inactive"
+                    style="left: 7px"
                   >
-                    नेपाली
+                    English
                   </button>
                 </div>
               </div>
 
-              <button class="cart-button">
+              <div class="cart-button">
                 <ion-icon
                   name="cart-outline"
                   class="cart-outlines"
                   size="large"
-                  style="color: white"
                 ></ion-icon>
                 <span
                   class="item-counter"
@@ -232,12 +244,12 @@
                     color: #f85606;
                   "
                 ></span>
-              </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="nav-sec" id="nav-sec">
+      <div class="nav-sec">
         <div class="sec-container">
           <span
             onclick="showSideBar()"
@@ -255,29 +267,26 @@
               name="reorder-three-outline"
               style="font-size: 25px"
             ></ion-icon
-            ><button>All</button>
+            >सबै
           </span>
-          <button class="sec" id="sec">Daraz Customer University</button>
-          <button class="sec" id="sec">Become a Seller</button>
-          <button class="sec" id="sec">Payments and Recharge</button>
-          <button class="sec" id="sec">Gifts & Vouchers</button>
-          <button class="sec" id="sec">Daraz Logistics Partner</button>
+          <button class="sec-1" style="font-size: 13px">
+            दराज ग्राहक विश्वविद्यालय
+          </button>
+          <button class="sec-1" style="font-size: 13px">
+            बिक्रेता बन्नुहोस्
+          </button>
+          <button class="sec-2" style="font-size: 13px">
+            भुक्तान र पुनर्चार्ज
+          </button>
+          <button class="sec-3" style="font-size: 13px">
+            उपहारहरू र भाउचरहरू
+          </button>
+          <button class="sec-4" style="font-size: 13px">
+            दाराज लजिस्टिक्स साझेदार
+          </button>
         </div>
       </div>
-      <div class="tour">
-        <div class="tour-overlay" id="tourOverlay">
-          <div class="tour-popup">
-            <h2>Welcome to Daraz!</h2>
-            <p>This is a quick tour to guide you through the key features.</p>
-            <div class="btns">
-              <button onclick="nextStep()">Next</button>
-              <button class="tour-close" onclick="closeTour()">
-                Skip Tour
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <div class="mobile-bottom-navigation">
         <button class="action-btn" data-mobile-menu-open-btn>
           <ion-icon name="menu-outline"></ion-icon>
@@ -300,7 +309,7 @@
         </button>
       </div>
     </nav>
-    <main id="main">
+    <main>
       <section class="content c-1">
         <!-- <div class="carousel-container">
           <div class="carousel">
@@ -316,7 +325,7 @@
           <button class="arrow prev" onclick="prevSlide">&#9665;</button>
           <button class="arrow next" onclick="nextSlide">&#9655;</button>
         </div> -->
-        <img src="components/ad/ad2.png" alt="" class="main-ad" />
+        <img src="components/ad/ad2Nepali.png" alt="" class="main-ad" />
         <!-- <marquee behavior="scroll" direction="left" loop="-1" scrollamount="8">
           Heavy Discounts on The <strong>New Year Sale 2024!</strong> Don't Miss
           Them!&nbsp;&nbsp; | &nbsp;&nbsp; Flash Sale Going on
@@ -327,38 +336,11 @@
 
         <div class="marquee-container">
           <div class="marquee-content">
-            Heavy Discounts on The <strong>New Year Sale 2024!</strong> Don't
-            Miss Them!&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Flash Sale Going
-            on <strong>Right Now!</strong> Time Is Running Out!
-            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Bagmati Products on Sale!
-            <strong>25%</strong>
-            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Samsung Products Exchange
-            Offer Going on! <strong>Affordable</strong> Financial Plan
-            Available! &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Heavy Discounts
-            on The <strong>New Year Sale 2024!</strong> Don't Miss
-            Them!&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Flash Sale Going on
-            <strong>Right Now!</strong> Time Is Running Out! &nbsp;&nbsp;&nbsp;
-            | &nbsp;&nbsp;&nbsp; Bagmati Products on Sale!
-            <strong>25%</strong>
-            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Samsung Products Exchange
-            Offer Going on! <strong>Affordable</strong> Financial Plan
-            Available! &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Heavy Discounts
-            on The <strong>New Year Sale 2024!</strong> Don't Miss
-            Them!&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Flash Sale Going on
-            <strong>Right Now!</strong> Time Is Running Out! &nbsp;&nbsp;&nbsp;
-            | &nbsp;&nbsp;&nbsp; Bagmati Products on Sale!
-            <strong>25%</strong>
-            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Samsung Products Exchange
-            Offer Going on! <strong>Affordable</strong> Financial Plan
-            Available! &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Heavy Discounts
-            on The <strong>New Year Sale 2024!</strong> Don't Miss Them!
-            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Flash Sale Going on
-            <strong>Right Now!</strong> Time Is Running Out! &nbsp;&nbsp;&nbsp;
-            | &nbsp;&nbsp;&nbsp; Bagmati Products on Sale!
-            <strong>25%</strong>
-            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; Samsung Products Exchange
-            Offer Going on! <strong>Affordable</strong> Financial Plan
-            Available!
+            <strong>नयाँ वर्ष बजार २०२४</strong> मा भारी छुटहरू! यस प्रस्तावलाई
+            नछुटाउनुहोस् &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+            <strong>अब चलिरहेको फ्ल्यास सेल!</strong> समय खत्तम हुँदैछ!
+            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; बागमती उत्पादहरू बिक्रीमा!
+            <strong>२५% छुट</strong>
           </div>
         </div>
 
@@ -367,20 +349,20 @@
         </div> -->
       </section>
 
-      <!--Flash Sale-->
-      <section class="content c-2" name="Flash Sale">
+      <!-- Flash Sale -->
+      <section class="content c-2" name="फ्ल्यास सेल">
         <!-- Header Section -->
         <section class="header">
           <div class="title">
-            <h1>Flash Sale<ion-icon name="flash"></ion-icon></h1>
-            <h5>Quick Picks: Act Now!</h5>
+            <h1>फ्ल्यास सेल<ion-icon name="flash"></ion-icon></h1>
+            <h5>त्वरित छनोट: अब काम गर!</h5>
           </div>
           <div
             class="time_rem"
             style="display: flex; gap: 10px; align-items: center"
           >
-            <p>Time Remaining:</p>
-            <div id="counter">00h : 00m : 00s</div>
+            <p>बाँकी समय:</p>
+            <div id="counter" style="width: 16vw"></div>
           </div>
         </section>
 
@@ -397,8 +379,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/shoes.webp"
               />
-              <p>Stylish Casual Women Heel Boots Shoes For Women</p>
-              <h6>Rs. 100 <br /></h6>
+              <p>स्टाइलिश क्याजुअल महिला हिल बुट्स जुत्ता</p>
+              <h6>रु. १०० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -406,8 +388,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 200</strike
-                >&nbsp; 50% OFF
+                  >रु. २००</strike
+                >&nbsp; ५०% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -417,13 +399,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(1124)</span>
+                <span class="rating-count">(११२४)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -435,8 +417,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/windcheater.jpg"
               />
-              <p>Waterproof Windcheater Jacket</p>
-              <h6>Rs. 600 <br /></h6>
+              <p>वाटरप्रूफ विन्डचिटर ज्याकेट</p>
+              <h6>रु. ६०० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -444,8 +426,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 800</strike
-                >&nbsp; 25% OFF
+                  >रु. ८००</strike
+                >&nbsp; २५% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -455,13 +437,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(300)</span>
+                <span class="rating-count">(३००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -473,8 +455,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/woolscarf.jpg"
               />
-              <p>Soft Woolen Scarf</p>
-              <h6>Rs. 150 <br /></h6>
+              <p>सजिलो उनको शाल</p>
+              <h6>रु. १५० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -482,8 +464,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 200</strike
-                >&nbsp; 25% OFF
+                  >रु. २००</strike
+                >&nbsp; २५% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -493,13 +475,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(180)</span>
+                <span class="rating-count">(१८०)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -511,8 +493,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/yogamat.jpg"
               />
-              <p>Premium Yoga Mat</p>
-              <h6>Rs. 400 <br /></h6>
+              <p>प्रीमियम योगा जस्ती</p>
+              <h6>रु. ४०० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -520,8 +502,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 500</strike
-                >&nbsp; 20% OFF
+                  >रु. ५००</strike
+                >&nbsp; २०% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -531,13 +513,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(150)</span>
+                <span class="rating-count">(१५०)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -549,8 +531,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/notebook.jpg"
               />
-              <p>Leather-Bound Notebook</p>
-              <h6>Rs. 150 <br /></h6>
+              <p>लेदर-बाउन्ड नोटबुक</p>
+              <h6>रु. १५० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -558,8 +540,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 200</strike
-                >&nbsp; 25% OFF
+                  >रु. २००</strike
+                >&nbsp; २५% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -569,13 +551,13 @@
                   <ion-icon name="star-half"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(300)</span>
+                <span class="rating-count">(३००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -587,12 +569,12 @@
         <!-- Header Section -->
         <section class="header">
           <div class="title">
-            <h1>Winter Goodies<ion-icon name="snow-outline"></ion-icon></h1>
-            <h5>Explore Some Cozy Essentials!</h5>
+            <h1>जाडोको सामग्रीहरू<ion-icon name="snow-outline"></ion-icon></h1>
+            <h5>न्यानो सामानहरू हेर्नुहोस्</h5>
           </div>
-          <button class="show-more winter">
-            Show More<ion-icon name="chevron-forward-outline"></ion-icon>
-          </button>
+          <div class="show-more winter">
+            थप देखाउनुहोस्<ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
         </section>
 
         <br />
@@ -608,8 +590,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/hoodie.jpg"
               />
-              <p>Cozy Hooded Sweatshirt</p>
-              <h6>Rs. 600 <br /></h6>
+              <p>हुडेड स्वेटशर्ट</p>
+              <h6>रु. ६०० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -617,8 +599,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 800</strike
-                >&nbsp; 25% OFF
+                  >रु. ८००</strike
+                >&nbsp; २५% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -628,13 +610,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(400)</span>
+                <span class="rating-count">(४००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -646,8 +628,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/gloves.jpg"
               />
-              <p>Winter Warmth Knitted Gloves</p>
-              <h6>Rs. 150 <br /></h6>
+              <p>न्यानो पञ्जा</p>
+              <h6>रु. १५० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -655,8 +637,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 200</strike
-                >&nbsp; 25% OFF
+                  >रु. २००</strike
+                >&nbsp; २५% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -666,13 +648,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(400)</span>
+                <span class="rating-count">(४००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -684,8 +666,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/handwarmer.jpg"
               />
-              <p>Reusable Pocket Hand Warmer</p>
-              <h6>Rs. 50 <br /></h6>
+              <p>हात वार्मर</p>
+              <h6>रु. ५० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -693,8 +675,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 70</strike
-                >&nbsp; 28.57% OFF
+                  >रु. ७०</strike
+                >&nbsp; २८.५७% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -704,13 +686,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(300)</span>
+                <span class="rating-count">(३००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -722,8 +704,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/heater.jpg"
               />
-              <p>Portable Electric Heater</p>
-              <h6>Rs. 800 <br /></h6>
+              <p>पोर्टेबल इलेक्ट्रिक हिटर</p>
+              <h6>रु. ८०० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -731,8 +713,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 1,000</strike
-                >&nbsp; 20% OFF
+                  >रु. १,०००</strike
+                >&nbsp; २०% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -742,13 +724,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(500)</span>
+                <span class="rating-count">(५००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -760,8 +742,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/thermos.jpg"
               />
-              <p>Insulated Stainless Steel Thermos</p>
-              <h6>Rs. 350 <br /></h6>
+              <p>अंतरबाह्यिक स्टेनलेस स्टील थर्मोस</p>
+              <h6>रु. ३५० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -769,8 +751,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 450</strike
-                >&nbsp; 22.22% OFF
+                  >रु. ४५०</strike
+                >&nbsp; २२.२२% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -780,13 +762,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(250)</span>
+                <span class="rating-count">(२५०)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -799,13 +781,13 @@
         <section class="header">
           <div class="title">
             <h1>
-              Trending Products<ion-icon name="trending-up-outline"></ion-icon>
+              चर्चित उत्पादहरू<ion-icon name="trending-up-outline"></ion-icon>
             </h1>
-            <h5>Redefine Your Style with Latest Trends!</h5>
+            <h5>नयाँ रुपमा आफ्नो शैली पुनः परिरेखित गर्नुहोस्!</h5>
           </div>
-          <button class="show-more">
-            Show More<ion-icon name="chevron-forward-outline"></ion-icon>
-          </button>
+          <div class="show-more">
+            थप देखाउनुहोस्<ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
         </section>
 
         <br />
@@ -823,8 +805,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/Iphone12.jpg"
               />
-              <p>Apple iPhone 12 - 128GB</p>
-              <h6>Rs. 80,000 <br /></h6>
+              <p>एप्पल आइफोन १२ - १२८जि.बि.</p>
+              <h6>रु. ८०,००० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -832,8 +814,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 90,000</strike
-                >&nbsp; 11.11% OFF
+                  >रु. ९०,०००</strike
+                >&nbsp; ११.११% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -843,51 +825,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(1200)</span>
+                <span class="rating-count">(१२००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 21 -->
-          <div class="card">
-            <div class="card-content">
-              <img
-                class="item_img"
-                src="components/card-images/flash-sale/santacap.jpg"
-              />
-              <p>Santa Claus Hat</p>
-              <h6>Rs. 50 <br /></h6>
-              <div class="discount">
-                <strike
-                  style="
-                    font-size: medium;
-                    vertical-align: middle;
-                    display: inline;
-                  "
-                  >Rs. 80</strike
-                >&nbsp; 37.5% OFF
-              </div>
-              <div class="rating">
-                <div class="stars">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half"></ion-icon>
-                </div>
-                <span class="rating-count">(100)</span>
-              </div>
-            </div>
-            <div class="a2c">
-              <button class="add-to-cart" id="add-to-cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -897,48 +841,10 @@
             <div class="card-content">
               <img
                 class="item_img"
-                src="components/card-images/flash-sale/bagpack.jpg"
-              />
-              <p>Trendy Explorer Backpack</p>
-              <h6>Rs 2,500 <br /></h6>
-              <div class="discount">
-                <strike
-                  style="
-                    font-size: medium;
-                    vertical-align: middle;
-                    display: inline;
-                  "
-                  >Rs 3,500</strike
-                >&nbsp; 30% OFF
-              </div>
-              <div class="rating">
-                <div class="stars">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half"></ion-icon>
-                </div>
-                <span class="rating-count">(507)</span>
-              </div>
-            </div>
-            <div class="a2c">
-              <button class="add-to-cart" id="add-to-cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 3 -->
-          <div class="card">
-            <div class="card-content">
-              <img
-                class="item_img"
                 src="components/card-images/flash-sale/blanket.jpg"
               />
-              <p>Cozy Winter Blanket</p>
-              <h6>Rs 1,800 <br /></h6>
+              <p>न्यानो सिरग</p>
+              <h6>रु. १,८०० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -946,8 +852,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs 2,500</strike
-                >&nbsp; 28% OFF
+                  >रु. २,५००</strike
+                >&nbsp; २८% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -957,130 +863,17 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(700)</span>
+                <span class="rating-count">(७००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
 
-          <!-- Product 17 -->
-          <div class="card">
-            <div class="card-content">
-              <img
-                class="item_img"
-                src="components/card-images/flash-sale/hotbag.jpg"
-              />
-              <p>Reusable Hot Water Bag</p>
-              <h6>Rs. 120 <br /></h6>
-              <div class="discount">
-                <strike
-                  style="
-                    font-size: medium;
-                    vertical-align: middle;
-                    display: inline;
-                  "
-                  >Rs. 150</strike
-                >&nbsp; 20% OFF
-              </div>
-              <div class="rating">
-                <div class="stars">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half"></ion-icon>
-                </div>
-                <span class="rating-count">(250)</span>
-              </div>
-            </div>
-            <div class="a2c">
-              <button class="add-to-cart" id="add-to-cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 19 -->
-          <div class="card">
-            <div class="card-content">
-              <img
-                class="item_img"
-                src="components/card-images/flash-sale/LEDlight.jpg"
-              />
-              <p>Dimmable LED Desk Lamp</p>
-              <h6>Rs. 300 <br /></h6>
-              <div class="discount">
-                <strike
-                  style="
-                    font-size: medium;
-                    vertical-align: middle;
-                    display: inline;
-                  "
-                  >Rs. 400</strike
-                >&nbsp; 25% OFF
-              </div>
-              <div class="rating">
-                <div class="stars">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half"></ion-icon>
-                </div>
-                <span class="rating-count">(600)</span>
-              </div>
-            </div>
-            <div class="a2c">
-              <button class="add-to-cart" id="add-to-cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 15 -->
-          <div class="card">
-            <div class="card-content">
-              <img
-                class="item_img"
-                src="components/card-images/flash-sale/herbaltea.jpg"
-              />
-              <p>Organic Herbal Tea Blend</p>
-              <h6>Rs. 250 <br /></h6>
-              <div class="discount">
-                <strike
-                  style="
-                    font-size: medium;
-                    vertical-align: middle;
-                    display: inline;
-                  "
-                  >Rs. 300</strike
-                >&nbsp; 16.67% OFF
-              </div>
-              <div class="rating">
-                <div class="stars">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half"></ion-icon>
-                </div>
-                <span class="rating-count">(200)</span>
-              </div>
-            </div>
-            <div class="a2c">
-              <button class="add-to-cart" id="add-to-cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
-              </button>
-            </div>
-          </div>
           <!-- Product 4 -->
           <div class="card">
             <div class="card-content">
@@ -1088,8 +881,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/brush.webp"
               />
-              <p>Gentle Care Electric Toothbrush Set, 6 Extra Brushes</p>
-              <h6>Rs. 100 <br /></h6>
+              <p>सौम्य देखभाल इलेक्ट्रिक टुथब्रश सेट, ६ अतिरिक्त ब्रशहरू</p>
+              <h6>रु. १०० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -1097,8 +890,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 200</strike
-                >&nbsp; 50% OFF
+                  >रु. २००</strike
+                >&nbsp; ५०% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -1108,13 +901,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star"></ion-icon>
                 </div>
-                <span class="rating-count">(1200)</span>
+                <span class="rating-count">(१२००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -1126,8 +919,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/cap.jpg"
               />
-              <p>Classic Cotton Baseball Cap</p>
-              <h6>Rs. 350 <br /></h6>
+              <p>बेसबल क्याप</p>
+              <h6>रु. ३५० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -1135,8 +928,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 500</strike
-                >&nbsp; 30% OFF
+                  >रु. ५००</strike
+                >&nbsp; ३०% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -1146,13 +939,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(950)</span>
+                <span class="rating-count">(९५०)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -1164,8 +957,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/coffee.jpg"
               />
-              <p>Arabica Ground Coffee Blend</p>
-              <h6>Rs. 400 <br /></h6>
+              <p>अराबिका ग्राउण्ड कफी ब्लेन्ड</p>
+              <h6>रु. ४०० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -1173,8 +966,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 500</strike
-                >&nbsp; 20% OFF
+                  >रु. ५००</strike
+                >&nbsp; २०% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -1184,13 +977,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(1200)</span>
+                <span class="rating-count">(१२००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -1202,8 +995,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/converse.jpg"
               />
-              <p>Classic High-Top Canvas Sneakers</p>
-              <h6>Rs. 800 <br /></h6>
+              <p>क्लासिक हाइ-टप क्यानभास स्नीकर्स</p>
+              <h6>रु. ८०० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -1211,8 +1004,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 1000</strike
-                >&nbsp; 20% OFF
+                  >रु. १०००</strike
+                >&nbsp; २०% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -1222,13 +1015,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(1500)</span>
+                <span class="rating-count">(१५००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -1240,8 +1033,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/dell.jpg"
               />
-              <p>Dell XPS 13 Laptop</p>
-              <h6>Rs. 90,000 <br /></h6>
+              <p>Dell XPS 13 ल्यापटप</p>
+              <h6>रु. ९०,००० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -1249,8 +1042,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 100,000</strike
-                >&nbsp; 10% OFF
+                  >रु. १,००,०००</strike
+                >&nbsp; १०% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -1260,13 +1053,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(800)</span>
+                <span class="rating-count">(८००)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -1278,8 +1071,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/winterpajama.jpg"
               />
-              <p>Cozy Winter Pajama Set</p>
-              <h6>Rs. 300 <br /></h6>
+              <p>शीतकालीन पजामा सेट</p>
+              <h6>रु. ३०० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -1287,8 +1080,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 400</strike
-                >&nbsp; 25% OFF
+                  >रु. ४००</strike
+                >&nbsp; २५% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -1298,13 +1091,13 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(220)</span>
+                <span class="rating-count">(२२०)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
@@ -1316,8 +1109,8 @@
                 class="item_img"
                 src="components/card-images/flash-sale/winterjacket.jpg"
               />
-              <p>Stylish Winter Jacket</p>
-              <h6>Rs. 700 <br /></h6>
+              <p>स्टाइलिस्ट शीतकालीन ज्याकेट</p>
+              <h6>रु. ७०० <br /></h6>
               <div class="discount">
                 <strike
                   style="
@@ -1325,8 +1118,8 @@
                     vertical-align: middle;
                     display: inline;
                   "
-                  >Rs. 900</strike
-                >&nbsp; 22.22% OFF
+                  >रु. ९००</strike
+                >&nbsp; २२.२२% छुट
               </div>
               <div class="rating">
                 <div class="stars">
@@ -1336,296 +1129,19 @@
                   <ion-icon name="star"></ion-icon>
                   <ion-icon name="star-half"></ion-icon>
                 </div>
-                <span class="rating-count">(280)</span>
+                <span class="rating-count">(२८०)</span>
               </div>
             </div>
             <div class="a2c">
               <button class="add-to-cart" id="add-to-cart">
                 <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 22 -->
-          <div class="card">
-            <div class="card-content">
-              <img
-                class="item_img"
-                src="components/card-images/flash-sale/socks.jpg"
-              />
-              <p>Cozy Winter Socks</p>
-              <h6>Rs. 80 <br /></h6>
-              <div class="discount">
-                <strike
-                  style="
-                    font-size: medium;
-                    vertical-align: middle;
-                    display: inline;
-                  "
-                  >Rs. 100</strike
-                >&nbsp; 20% OFF
-              </div>
-              <div class="rating">
-                <div class="stars">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half"></ion-icon>
-                </div>
-                <span class="rating-count">(150)</span>
-              </div>
-            </div>
-            <div class="a2c">
-              <button class="add-to-cart" id="add-to-cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 13 -->
-          <div class="card">
-            <div class="card-content">
-              <img
-                class="item_img"
-                src="components/card-images/flash-sale/headphone.jpg"
-              />
-              <p>Wireless Over-Ear Headphones</p>
-              <h6>Rs. 1,500 <br /></h6>
-              <div class="discount">
-                <strike
-                  style="
-                    font-size: medium;
-                    vertical-align: middle;
-                    display: inline;
-                  "
-                  >Rs. 2,000</strike
-                >&nbsp; 25% OFF
-              </div>
-              <div class="rating">
-                <div class="stars">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half"></ion-icon>
-                </div>
-                <span class="rating-count">(800)</span>
-              </div>
-            </div>
-            <div class="a2c">
-              <button class="add-to-cart" id="add-to-cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 10 -->
-          <div class="card">
-            <div class="card-content">
-              <img
-                class="item_img"
-                src="components/card-images/flash-sale/glassset.jpg"
-              />
-              <p>Elegant Glass Drinkware Set</p>
-              <h6>Rs. 800 <br /></h6>
-              <div class="discount">
-                <strike
-                  style="
-                    font-size: medium;
-                    vertical-align: middle;
-                    display: inline;
-                  "
-                  >Rs. 1,000</strike
-                >&nbsp; 20% OFF
-              </div>
-              <div class="rating">
-                <div class="stars">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half"></ion-icon>
-                </div>
-                <span class="rating-count">(600)</span>
-              </div>
-            </div>
-            <div class="a2c">
-              <button class="add-to-cart" id="add-to-cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 6 -->
-          <div class="card">
-            <div class="card-content">
-              <img
-                class="item_img"
-                src="components/card-images/flash-sale/cocoapowder.jpg"
-              />
-              <p>Premium Cocoa Powder</p>
-              <h6>Rs. 250 <br /></h6>
-              <div class="discount">
-                <strike
-                  style="
-                    font-size: medium;
-                    vertical-align: middle;
-                    display: inline;
-                  "
-                  >Rs. 300</strike
-                >&nbsp; 17% OFF
-              </div>
-              <div class="rating">
-                <div class="stars">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half"></ion-icon>
-                </div>
-                <span class="rating-count">(800)</span>
-              </div>
-            </div>
-            <div class="a2c">
-              <button class="add-to-cart" id="add-to-cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 3 -->
-          <div class="card">
-            <div class="card-content">
-              <img
-                class="item_img"
-                src="components/card-images/flash-sale/book.jpg"
-              />
-              <p>Classic Hardcover Book Collection</p>
-              <h6>Rs 500 <br /></h6>
-              <div class="discount">
-                <strike
-                  style="
-                    font-size: medium;
-                    vertical-align: middle;
-                    display: inline;
-                  "
-                  >Rs 700</strike
-                >&nbsp; 28% OFF
-              </div>
-              <div class="rating">
-                <div class="stars">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                </div>
-                <span class="rating-count">(450)</span>
-              </div>
-            </div>
-            <div class="a2c">
-              <button class="add-to-cart" id="add-to-cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 2 -->
-          <div class="card">
-            <div class="card-content">
-              <img
-                class="item_img"
-                src="components/card-images/flash-sale/blanket.jpg"
-              />
-              <p>Cozy Winter Blanket</p>
-              <h6>Rs 1,800 <br /></h6>
-              <div class="discount">
-                <strike
-                  style="
-                    font-size: medium;
-                    vertical-align: middle;
-                    display: inline;
-                  "
-                  >Rs 2,500</strike
-                >&nbsp; 28% OFF
-              </div>
-              <div class="rating">
-                <div class="stars">
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-half"></ion-icon>
-                </div>
-                <span class="rating-count">(700)</span>
-              </div>
-            </div>
-            <div class="a2c">
-              <button class="add-to-cart" id="add-to-cart">
-                <ion-icon name="cart-outline"></ion-icon>
-                Add to Cart
+                कार्टमा थप्नुहोस्
               </button>
             </div>
           </div>
         </section>
       </section>
     </main>
-
-    <!-- Accessiblity Button & Bar -->
-    <button class="acc-bar-button" id="acc-bar-button" onclick="toggleAccBar()">
-      <ion-icon name="accessibility"></ion-icon>
-    </button>
-    <div class="acc-bar" id="acc-bar">
-      <div class="acc-saturation" id="saturationButton">
-        <div class="acc-icon">
-          <ion-icon class="water-outline" name="water-outline"></ion-icon>
-          <ion-icon class="water" name="water"></ion-icon>
-        </div>
-        <p>Lower<br />Saturation</p>
-        <div class="sat-lvl">
-          <div class="lvl" id="sat-lvl-1"></div>
-          <div class="lvl" id="sat-lvl-2"></div>
-          <div class="lvl" id="sat-lvl-3"></div>
-        </div>
-      </div>
-
-      <div class="acc-txtresize" id="acc-txtresize">
-        <div class="acc-icon"><ion-icon name="expand"></ion-icon></div>
-        <p>Text<br />Resize</p>
-        <div class="sat-lvl">
-          <div class="lvl" id="res-lvl-1"></div>
-          <div class="lvl" id="res-lvl-2"></div>
-          <div class="lvl" id="res-lvl-3"></div>
-        </div>
-      </div>
-
-      <div class="acc-link" id="acc-link">
-        <div class="acc-icon"><ion-icon name="link-outline"></ion-icon></div>
-        <p>Link<br />Highlight</p>
-        <div class="sat-lvl">
-          <div class="lvl" id="link-lvl"></div>
-        </div>
-      </div>
-
-      <div class="acc-txtspace" id="acc-txtspace">
-        <div class="acc-icon">
-          <ion-icon name="resize"></ion-icon>
-          <ion-icon name="ellipse" class="ellipse"></ion-icon>
-        </div>
-        <p>Text Spacing</p>
-        <div class="sat-lvl">
-          <div class="lvl" id="spc-lvl-1"></div>
-          <div class="lvl" id="spc-lvl-2"></div>
-          <div class="lvl" id="spc-lvl-3"></div>
-        </div>
-      </div>
-    </div>
     <object class="footer" data="components/footer.html" type=""></object>
   </body>
 </html>

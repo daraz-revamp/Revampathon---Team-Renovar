@@ -48,9 +48,8 @@ body {
   width: 100%;
   position: fixed;
   padding: 20px 0;
-  border-bottom: 1px solid #ededed;
   background-color: #f85606;
-  z-index: 10
+  z-index: 10;
 }
 
 .login_button, .signup_button, .language-button, .cart-button{
@@ -129,6 +128,7 @@ body {
   font-weight: 500;
   position: relative;
   color: white;
+  text-wrap: nowrap;
 }
 
 .signup-text {
@@ -150,14 +150,6 @@ body {
   height: 40px;
   /* margin-left: 20px; */
   font-size: 27px;
-}
-
-.EN {
-  display: flex;
-  /* margin-left: -13px; */
-  margin-right: 5px;
-  font-size: 15px;
-  font-weight: 500;
 }
 
 .down-arrow {

@@ -35,7 +35,7 @@
         flex-direction: column;
         flex-shrink: 1;
         gap: 1px;
-        max-height: 350px;
+        max-height: 400px;
         padding-left: 15px;
         padding-right: 15px;
         text-align: left;
@@ -54,7 +54,7 @@
         }
         
         .item_img {
-            object-fit:contain;
+            object-fit:cover;
             height: 190px;
             max-width: 100%;
             text-align: center;
