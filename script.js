@@ -11,11 +11,6 @@ counter.innerText = sessionStorage.getItem("item_counter");
 
 function toggleDropdown(a) {
   a.classList.toggle("active");
-  if (a.classList.contains("active")) {
-    a.innerText = "See All v";
-  } else {
-    a.innerText = "See All >";
-  }
 }
 
 function showSideBar() {
@@ -101,29 +96,6 @@ function toggleAccBar() {
 }
 
 //Tour script
-
-let currentStep = 1;
-
-function nextStep() {
-  switch (currentStep) {
-    case 1:
-      alert("Step 1: This is your homepage.");
-      break;
-    case 2:
-      alert("Step 2: Explore the navigation menu.");
-      break;
-    // Add more steps as needed
-
-    default:
-      closeTour();
-  }
-
-  currentStep++;
-}
-
-function closeTour() {
-  document.getElementById("tourOverlay").style.display = "none";
-}
 
 //Saturation Level Toggle
 

@@ -82,50 +82,48 @@
           <div class="dropdown-item">Motors, Tools & DIY</div>
         </div>
         <a class="sideBar-content-header" onclick="toggleDropdown(this)">
-          <button>Earn With Daraz</button>
+          <button class="dropdown-btn">Earn With Daraz</button>
           <ion-icon
             id="chevron-forward-outline"
             name="chevron-forward-outline"
             size="small"
           ></ion-icon>
         </a>
-        <div class="dropdown-content">
-          <div class="dropdown-item">Women's Fashion</div>
-          <div class="dropdown-item">Health & Beauty</div>
-          <div class="dropdown-item">Men's Fashion</div>
-          <div class="dropdown-item">Watches & Accessories</div>
-          <div class="dropdown-item">Electronic Devices</div>
-          <div class="dropdown-item">TV & Home Appliances</div>
-          <div class="dropdown-item">Electronic Accessories</div>
-          <div class="dropdown-item">Groceries & Pets</div>
-          <div class="dropdown-item">Babies & Toys</div>
-          <div class="dropdown-item">Home & Lifestyle</div>
-          <div class="dropdown-item">Sports & Outdoor</div>
-          <div class="dropdown-item">Motors, Tools & DIY</div>
-        </div>
+        <div class="dropdown-item">Sell on Daraz</div>
+        <div class="dropdown-item">Daraz Seller University</div>
+        <div class="dropdown-item">Code of Conduct</div>
+        
         <div class="sideBar-content-header">
-          <button>Help & Support</button>
+          <button class="dropdown-btn">Help & Support</button>
           <ion-icon
             id="chevron-forward-outline"
             name="chevron-forward-outline"
             size="small"
           ></ion-icon>
         </div>
+        <div class="dropdown-item">Customer Care</div>
+        <div class="dropdown-item">Chat With Us</div>
+        <div class="dropdown-item">Customer Care</div>
+        <div class="dropdown-item">Report Misuse</div>
         <div class="sideBar-content-header">
-          <button>Settings</button>
+          <button class="dropdown-btn">Settings</button>
           <ion-icon
             id="chevron-forward-outline"
             name="chevron-forward-outline"
             size="small"
           ></ion-icon>
-        </div>
+          
+        </div>  
+        <div class="dropdown-item">Account Settings</div>
+        <div class="dropdown-item">Login</div>
+        <div class="dropdown-item">Signup</div>
       </div>
     </div>
     <nav>
       <div class="nav-main" id="nav-main">
         <div class="container">
           <div class="container-logo_search">
-            <a href="../index.htm" class="header-logo">
+            <a href="index.html" class="header-logo">
               <img
                 src="Navigation/assets/images/logo/logo2.png"
                 alt="Daraz LOGO"
@@ -137,7 +135,6 @@
             <div class="header-search-container">
               <select class="cat-search" id="cat-search">
                 <option value="All">All Categories</option>
-
                 <option value="Women's Fashion">Women's Fashion</option>
                 <option value="Health & Beauty">Health & Beauty</option>
                 <option value="Men's Fashion">Men's Fashion</option>
@@ -261,27 +258,41 @@
             ></ion-icon
             ><button>All</button>
           </span>
-          <button class="sec" id="sec">Daraz Customer University</button>
+          <button class="sec" id="sec" onclick="window.location.href='https://www.daraz.com.np/wow/i/np/help-pages/daraz-customer-univeristy?spm=a2a0e.21784598.footer_top.14.2d8b7259KsO4VT&hybrid=1&scm=1003.4.icms-zebra-100024112-2954385.OTHER_5996325366_2597685'"">Daraz Customer University</button>
           <button class="sec" id="sec">Become a Seller</button>
           <button class="sec" id="sec">Payments and Recharge</button>
           <button class="sec" id="sec">Gifts & Vouchers</button>
           <button class="sec" id="sec">Daraz Logistics Partner</button>
         </div>
       </div>
-      <div class="tour">
+      <!-- <div class="tour">
         <div class="tour-overlay" id="tourOverlay">
           <div class="tour-popup">
-            <h2>Welcome to Daraz!</h2>
-            <p>This is a quick tour to guide you through the key features.</p>
-            <div class="btns">
-              <button onclick="nextStep()">Next</button>
-              <button class="tour-close" onclick="closeTour()">
-                Skip Tour
-              </button>
+            <div class="main-pop">
+              <h1>Welcome to Daraz!</h1>
+              <p>
+                Would you like a quick tour to guide you through our key
+                features?
+              </p>
+              <div class="btns">
+                <button onclick="nextStep()">Star Tour!</button>
+                <button class="tour-close" onclick="closeTour()">
+                  No, I Don't Need It
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="guide g1">
+          <p>
+            <div>Welcome, This is the &nbsp;<strong> Daraz </strong>&nbsp; Homepage</div>
+            <button onclick="nextStep()" class="btns">Next!</button>
+          </p>
+        </div>
+        <div class="guide g2"><div>Welcome, This is the &nbsp;<strong> Daraz </strong>&nbsp; Homepage</div><button onclick="nextStep()" class="btns">Next!</button></div>
+        <div class="guide g3"><div>Welcome, This is the &nbsp;<strong> Daraz </strong>&nbsp; Homepage</div><button onclick="nextStep()" class="btns">Next!</button></div>
+        <div class="guide g4"><div>Welcome, This is the &nbsp;<strong> Daraz </strong>&nbsp; Homepage</div><button onclick="nextStep()" class="btns">Next!</button></div>
+      </div> -->
       <div class="mobile-bottom-navigation">
         <button class="action-btn" data-mobile-menu-open-btn>
           <ion-icon name="menu-outline"></ion-icon>
@@ -826,7 +837,7 @@
       </section>
 
       <!--Trending-->
-      <section class="content c-4" name="Trending Section">
+      <section class="content c-4" name="Trending Section" style="margin-bottom: 100px;">
         <!-- Header Section -->
         <section class="header">
           <div class="title">
@@ -1658,6 +1669,11 @@
         </div>
       </div>
     </div>
-    <object class="footer" data="components/footer.html" type=""></object>
+    <hr>
+    <div class="footers">
+      <object class="footer" style="height: 368px;" data="components/footer1.html" type=""></object>
+      <hr>
+      <object class="footer" data="components/footer.html" type=""></object>
+    </div>
   </body>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow: auto;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        height: auto;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+      }
+      .picture,
+      .dcumain {
+        width: 100%;
+        max-width: 800px;
+        margin-bottom: 20px;
+        overflow: hidden;
+      }
+      .youtube-video,
+      .picture img,
+      .dcumain img {
+        width: 100%;
+        object-fit: contain;
+      }
+      .youtube-video iframe {
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="picture dcumain">
+          <img src="./dcuimage/dcumain.png" alt="dcumain" />
+        </div>
+        <div class="picture">
+          <img src="./dcuimage/dcu.png" alt="dcu2" />
+        </div>
+        <div class="youtube-video">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/JiZt8uWpaoo?si=rYtdoc0zwypLpijz"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="picture">
+          <img src="./dcuimage/dcu2.webp" alt="dcu2" />
+        </div>
+        <div class="youtube-video">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/CcKoys8v3xU?si=ssJ6_cRiuYi_LUjJ"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="picture">
+          <img src="./dcuimage/dcu3.png" alt="dcu3" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

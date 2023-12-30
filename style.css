@@ -158,6 +158,7 @@ small{
             padding-left: 20px; 
             &:hover{
                 cursor: pointer;
+                text-decoration: underline;
             }
         }
     }
@@ -415,7 +416,7 @@ main{
 
 @keyframes marquee {
     from {
-        transform: translateX(14%);
+        transform: translateX(10%);
     }
     to {
         transform: translateX(-100%);
@@ -645,6 +646,10 @@ body{
     p{
         line-height: 80px;
     }
+    h1{
+        font-size: 45px;
+        font-weight: 500;
+    }
     .btns{
         display: flex;
         justify-content: space-around;
@@ -662,6 +667,49 @@ body{
             color: white;
             }
         }
+    }
+}
+.guide{
+    position: absolute;
+    width: 450px;
+    height: 200px;
+    background-color: white;
+    z-index: 20000;
+    color: black;
+    font-size: large;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    p{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        line-height: normal;
+        font-weight: 600;
+        padding: 5px 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: #f85606;
+        transition: 100ms ease-in-out;
+        background-color: #ededed;
+        &:hover{
+        background-color: #f85606;
+        color: white;
+        }
+    }
+    &.g1, &.g2, &.g3, &.g4{
+        position: fixed;
+        width: 200px;
+        height: fit-content;
+        width: fit-content;
+        padding: 20px 30px;
+        font-size: medium;
+        opacity: 0;
     }
 }
 
