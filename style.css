@@ -181,7 +181,6 @@ main{
         margin-right: 16.65vw;
         max-width: 100%;
         border-radius: 10px;
-        background-color: white;
         hr{
             height: 1px;
             border-width: 0px;
@@ -220,41 +219,64 @@ main{
         }
     }
     .c-1{
-        .main-ad{
-            width: 100%;
-            height: 432.9px;
-            object-fit:fill;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-        }
-        .text-ad, marquee{
-            position: relative;
-            display: inline-block;
-            background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+        gap: 20px;
+        .c-1-1{
+            width: 30%;
+            padding: 30px 30px;
             height: fit-content;
-        margin: 0 auto;
-        letter-spacing: 2px;
-        text-wrap: nowrap;
-        line-height: 50px;
-        text-align: center;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        z-index: 5;
-        }
-        
-        /* Marquee CSS */
-        .marquee-container {
-            letter-spacing: 1px;
-            line-height: 40px;
-            white-space: nowrap;
-            overflow: hidden;
-            position: relative;
-            
-            .marquee-content {
-                display: inline-block;
-                animation: marquee 105s linear infinite;
-                
+            background-color: white;
+            ul{
+                font-size: 13px;
+                line-height: 30px;
+                list-style-type: none;
+                li{
+                    color: #4e4e4e;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    ion-icon{
+                        font-size: 20px;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        text-decoration: underline;
+                        color: black;
+                    }
+                }
             }
+            border-radius: 10px;
+        }
+        .c-1-2{
+            width: 70%;
+            .main-ad{
+                width: 100%;
+                height: 380px;
+                object-fit:fill;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
+        
+            /* Marquee CSS */
+            .marquee-container {
+                background-color: white;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                letter-spacing: 1px;
+                line-height: 40px;
+                white-space: nowrap;
+                overflow: hidden;
+                position: relative;
+                
+                .marquee-content {
+                    display: inline-block;
+                    animation: marquee 105s linear infinite;
+                    
+                }
+        }
         }
         
         .carousel {
@@ -296,6 +318,7 @@ main{
     }
     .c-2, .c-3, .c-4{
         padding: 20px 30px 30px 30px;
+        background-color: white;
         h1{
             display: flex;
             align-items: center;
@@ -481,9 +504,9 @@ body{
 .acc-bar {
     position: fixed;
     top: 30%;
-    right: -100px;
-    width: 100px;
-    height: 60%;
+    right: -200px;
+    width: fit-content;
+    height: fit-content;
     background-color: #7dbce7;
     box-sizing: border-box;
     transition: right 200ms;

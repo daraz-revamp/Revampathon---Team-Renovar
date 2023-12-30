@@ -126,12 +126,12 @@
       </div>
     </div>
     <nav>
-      <div class="nav-main">
+      <div class="nav-main" id="nav-main">
         <div class="container">
           <div class="container-logo_search">
             <a href="../index.htm" class="header-logo">
               <img
-                src="Navigation/assets/images/logo/logo2.png"
+                src="components/ad/daraznp.png"
                 alt="Daraz LOGO"
                 width="120"
                 height="48"
@@ -163,7 +163,6 @@
                 <option value="Sports & Outdoor">खेल र आउटडोर</option>
                 <option value="Motors, Tools & DIY">मोटर, टुल्स र DIY</option>
               </select>
-
               <input
                 type="search"
                 name="search"
@@ -249,7 +248,7 @@
           </div>
         </div>
       </div>
-      <div class="nav-sec">
+      <div class="nav-sec" id="nav-sec">
         <div class="sec-container">
           <span
             onclick="showSideBar()"
@@ -309,7 +308,7 @@
         </button>
       </div>
     </nav>
-    <main>
+    <main id="main">
       <section class="content c-1">
         <!-- <div class="carousel-container">
           <div class="carousel">
@@ -325,7 +324,6 @@
           <button class="arrow prev" onclick="prevSlide">&#9665;</button>
           <button class="arrow next" onclick="nextSlide">&#9655;</button>
         </div> -->
-        <img src="components/ad/ad2Nepali.png" alt="" class="main-ad" />
         <!-- <marquee behavior="scroll" direction="left" loop="-1" scrollamount="8">
           Heavy Discounts on The <strong>New Year Sale 2024!</strong> Don't Miss
           Them!&nbsp;&nbsp; | &nbsp;&nbsp; Flash Sale Going on
@@ -333,14 +331,48 @@
           &nbsp;&nbsp; Bagmati Products on Sale! <strong>25% OFF</strong>
           <strong>25% OFF</strong>
         </marquee> -->
-
-        <div class="marquee-container">
-          <div class="marquee-content">
-            <strong>नयाँ वर्ष बजार २०२४</strong> मा भारी छुटहरू! यस प्रस्तावलाई
-            नछुटाउनुहोस् &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
-            <strong>अब चलिरहेको फ्ल्यास सेल!</strong> समय खत्तम हुँदैछ!
-            &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; बागमती उत्पादहरू बिक्रीमा!
-            <strong>२५% छुट</strong>
+        <div class="c-1-1">
+          <ul>
+            <li><ion-icon name="woman-outline"></ion-icon>महिलाहरूको फेसन</li>
+            <li>
+              <ion-icon name="medkit-outline"></ion-icon>स्वास्थ्य र सौन्दर्य
+            </li>
+            <li><ion-icon name="man-outline"></ion-icon>पुरुषहरूको फेसन</li>
+            <li>
+              <ion-icon name="watch-outline"></ion-icon>घडी र सहायक सामग्रीहरू
+            </li>
+            <li>
+              <ion-icon name="flash-outline"></ion-icon>इलेक्ट्रोनिक डिभाइसहरू
+            </li>
+            <li><ion-icon name="tv-outline"></ion-icon>टीभी र गृह उपकरणहरू</li>
+            <li>
+              <ion-icon name="calculator-outline"></ion-icon>इलेक्ट्रोनिक सहायक
+              सामग्रीहरू
+            </li>
+            <li>
+              <ion-icon name="fast-food-outline"></ion-icon>खड्यान्ना र पशुपालन
+            </li>
+            <li>
+              <ion-icon name="paper-plane-outline"></ion-icon>बच्चाहरू र
+              खेलौनाहरू
+            </li>
+            <li><ion-icon name="home-outline"></ion-icon>घर र जीवनशैली</li>
+            <li><ion-icon name="tennisball-outline"></ion-icon>खेल र आउटडोर</li>
+            <li>
+              <ion-icon name="hammer-outline"></ion-icon>मोटर, टुल्स र दिवे
+            </li>
+          </ul>
+        </div>
+        <div class="c-1-2">
+          <img src="components/ad/newad2np.png" alt="" class="main-ad" />
+          <div class="marquee-container">
+            <div class="marquee-content">
+              <strong>नयाँ वर्ष बजार २०२४</strong> मा भारी छुटहरू! यस
+              प्रस्तावलाई नछुटाउनुहोस् &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+              <strong>अब चलिरहेको फ्ल्यास सेल!</strong> समय खत्तम हुँदैछ!
+              &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; बागमती उत्पादहरू बिक्रीमा!
+              <strong>२५% छुट</strong>
+            </div>
           </div>
         </div>
 
@@ -1142,6 +1174,54 @@
         </section>
       </section>
     </main>
+    <button class="acc-bar-button" id="acc-bar-button" onclick="toggleAccBar()">
+      <ion-icon name="accessibility"></ion-icon>
+    </button>
+    <div class="acc-bar" id="acc-bar">
+      <div class="acc-saturation" id="saturationButton">
+        <div class="acc-icon">
+          <ion-icon class="water-outline" name="water-outline"></ion-icon>
+          <ion-icon class="water" name="water"></ion-icon>
+        </div>
+        <p>Lower<br />Saturation</p>
+        <div class="sat-lvl">
+          <div class="lvl" id="sat-lvl-1"></div>
+          <div class="lvl" id="sat-lvl-2"></div>
+          <div class="lvl" id="sat-lvl-3"></div>
+        </div>
+      </div>
+
+      <div class="acc-txtresize" id="acc-txtresize">
+        <div class="acc-icon"><ion-icon name="expand"></ion-icon></div>
+        <p>Text<br />Resize</p>
+        <div class="sat-lvl">
+          <div class="lvl" id="res-lvl-1"></div>
+          <div class="lvl" id="res-lvl-2"></div>
+          <div class="lvl" id="res-lvl-3"></div>
+        </div>
+      </div>
+
+      <div class="acc-link" id="acc-link">
+        <div class="acc-icon"><ion-icon name="link-outline"></ion-icon></div>
+        <p>Link<br />Highlight</p>
+        <div class="sat-lvl">
+          <div class="lvl" id="link-lvl"></div>
+        </div>
+      </div>
+
+      <div class="acc-txtspace" id="acc-txtspace">
+        <div class="acc-icon">
+          <ion-icon name="resize"></ion-icon>
+          <ion-icon name="ellipse" class="ellipse"></ion-icon>
+        </div>
+        <p>Text Spacing</p>
+        <div class="sat-lvl">
+          <div class="lvl" id="spc-lvl-1"></div>
+          <div class="lvl" id="spc-lvl-2"></div>
+          <div class="lvl" id="spc-lvl-3"></div>
+        </div>
+      </div>
+    </div>
     <object class="footer" data="components/footer.html" type=""></object>
   </body>
 </html>
